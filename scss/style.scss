@@ -1,4 +1,5 @@
-@import "colors";
+@import "colors.scss";
+@import "fonts.scss";
 
 h1,
 .hero {
@@ -9,7 +10,7 @@ h1,
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
-    background: $gradient-redtext;
+    background: map-get($gradient,redtext);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

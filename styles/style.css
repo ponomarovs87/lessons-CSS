@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("woff2-variations");
+  font-weight: 100 950;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format("woff2-variations");
+  font-weight: 100 950;
+  font-stretch: 75% 125%;
+  font-style: italic;
+}
 h1,
 .hero {
   /* Hero / Regular */
@@ -10,4 +24,4 @@ h1,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}/*# sourceMappingURL=style.css.map */
+}
