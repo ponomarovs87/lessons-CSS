@@ -1,21 +1,27 @@
-//colors
-$main-regular: #323264;
-$main-alt: #46466e;
-$main-soft: #686887;
-//Accent
-$accent-regular: #f0145a;
-//Active
-$active-Regular: #24a3ff;
-$active-hover: #0085ff;
-$active-active: #006ccf;
-//Grey
-$grey-bg: #f5f5fa;
-$grey-bgalt: #ededf7;
-$grey-text: #ededf7;
-$grey-separator: #e6e6f0;
-//Gradient
-$gradient-regular: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #a54b5f 100%);
-$gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7a425e 87.53%);
-$gradient-red: linear-gradient(323.35deg, #f0145a 6.7%, #693264 70.36%);
-$gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
-$gradient-redtext: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+$main: (
+    regular: #323264,
+    alt: #46466e,
+    soft: #686887,
+);
+$accent: (
+    regular: #f0145a,
+);
+$active: (
+    regular: #24a3ff,
+    hover: #0085ff,
+    active: #006ccf,
+);
+$grey: (
+    bg: #f5f5fa,
+    bgalt: #ededf7,
+    text: #ededf7,
+    separator: #e6e6f0,
+);
+$gradient: (
+    regular: linear-gradient(128.63deg, map-get($main, regular) 0%, map-get($main, regular) 73.96%, #a54b5f 100%),
+    soft: linear-gradient(42.01deg, map-get($main, regular) 14.33%, map-get($main, regular) 51.39%, #7a425e 87.53%),
+    red: linear-gradient(323.35deg, map-get($accent, regular) 6.7%, #693264 70.36%),
+    supersoft:
+        linear-gradient(228.57deg, map-get($main, regular) 11.93%, map-get($main, regular) 57.17%, #643e72 87.46%),
+    redtext: linear-gradient(90.13deg, map-get($accent, regular) 0.84%, #ef8080 99.96%),
+);
