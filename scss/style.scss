@@ -1,17 +1,3 @@
-@import "colors.scss";
-@import "fonts.scss";
+@import "tags.scss";
 
-h1,
-.hero {
-    /* Hero / Regular */
 
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
-    background: map-get($gradient,redtext);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}

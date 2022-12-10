@@ -13,8 +13,7 @@
   font-style: italic;
 }
 h1,
-.hero {
-  /* Hero / Regular */
+.hero, .h1 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
