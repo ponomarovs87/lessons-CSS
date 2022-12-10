@@ -1,27 +1,13 @@
-main-regular {
-  color: #323264;
-}
-
-main-alt {
-  color: #46466e;
-}
-
-main-soft {
-  color: #686887;
-}
-
-accent-regular {
-  color: #f0145a;
-}
-
-link-Regular {
-  color: #24a3ff;
-}
-
-link-hover {
-  color: #0085ff;
-}
-
-link-active {
-  color: #006ccf;
+h1,
+.hero {
+  /* Hero / Regular */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }/*# sourceMappingURL=style.css.map */
