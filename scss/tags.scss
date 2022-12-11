@@ -1,6 +1,13 @@
 @import "colors.scss";
 @import "fonts.scss";
 
+div {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
 h1,
 h2,
 h3,
