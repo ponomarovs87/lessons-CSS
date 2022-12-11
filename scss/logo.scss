@@ -1,0 +1,14 @@
+@import "colors.scss";
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin FB-color($selector1, $selector2) {
+    svg {
+        path {
+            fill: map-get($selector1, $selector2);
+        }
+    }
+}
