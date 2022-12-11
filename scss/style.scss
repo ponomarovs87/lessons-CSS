@@ -4,11 +4,21 @@
 .FB {
     width: 38px;
     height: 38px;
-
     a {
         @include FB-color($main, regular);
         &:hover {
             @include FB-color($active, regular);
         }
     }
+}
+.logo {
+    width: 69.33px + 4px + 11.62px;
+    height: 32px;
+    a {
+        @include Logo-color($accent, regular, $basic-color, white);
+    }
+}
+
+body {
+    background-color: green;
 }

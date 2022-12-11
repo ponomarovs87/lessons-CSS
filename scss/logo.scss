@@ -5,10 +5,40 @@ svg {
     height: 100%;
 }
 
-@mixin FB-color($selector1, $selector2) {
+@mixin FB-color($fbcolor1, $fbcolor2) {
     svg {
         path {
-            fill: map-get($selector1, $selector2);
+            fill: map-get($fbcolor1, $fbcolor2);
+        }
+    }
+}
+
+@mixin Logo-color($logocolor1,$logocolor2,$logocolor3,$logocolor4){
+        svg {
+            path {
+                fill: map-get($logocolor3, $logocolor4);
+            }
+            :first-child{
+                fill: map-get($logocolor1, $logocolor2);
+            }
+        }
+}
+
+div.logo {
+    min-width: 69.33px + 4px + 11.62px;
+    min-height: 32px;
+    position: relative;
+    a {
+        display: Flex;
+        position: absolute;
+        justify-content: space-between;
+        .hlegal {
+            width: 81.612713%;
+            height: 100%;
+        }
+        .slash {
+            width: 13.678634%;
+            height: 81.25%;
         }
     }
 }
