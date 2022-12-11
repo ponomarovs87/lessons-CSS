@@ -15,10 +15,6 @@
     width: 69.33px + 4px + 11.62px;
     height: 32px;
     a {
-        @include Logo-color($accent, regular, $basic-color, white);
+        @include Logo-color($accent, regular, $main, regular);
     }
-}
-
-body {
-    background-color: green;
 }

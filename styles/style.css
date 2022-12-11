@@ -163,12 +163,8 @@ div.logo a .slash {
   height: 32px;
 }
 .logo a svg path {
-  fill: #ffffff;
+  fill: #323264;
 }
 .logo a svg :first-child {
   fill: #f0145a;
-}
-
-body {
-  background-color: green;
 }
