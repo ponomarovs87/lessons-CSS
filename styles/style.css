@@ -19,6 +19,11 @@ div {
   display: inline-block;
 }
 
+svg {
+  width: 100%;
+  height: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -54,6 +59,7 @@ a {
 p,
 a {
   font-size: 16px;
+  height: 100%;
 }
 
 ::marker {
@@ -122,11 +128,6 @@ a:hover {
   color: #f0145a;
 }
 
-svg {
-  width: 100%;
-  height: 100%;
-}
-
 div.logo {
   min-width: 84.95px;
   min-height: 32px;
@@ -138,12 +139,12 @@ div.logo a {
   justify-content: space-between;
 }
 div.logo a .hlegal {
-  width: 81.612713%;
-  height: 100%;
+  max-width: 81.612713%;
+  max-height: 100%;
 }
 div.logo a .slash {
-  width: 13.678634%;
-  height: 81.25%;
+  max-width: 13.678634%;
+  max-height: 81.25%;
 }
 
 .FB {

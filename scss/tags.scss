@@ -8,6 +8,11 @@ div {
     display: inline-block;
 }
 
+svg {
+    width: 100%;
+    height: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -40,6 +45,7 @@ a {
 p,
 a {
     font-size: 16px;
+    height: 100%;
 }
 ::marker {
     color: map-get($accent, regular);
