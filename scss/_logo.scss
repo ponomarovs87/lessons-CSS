@@ -9,32 +9,139 @@
     }
 }
 
-@mixin Logo-color($logocolor1,$logocolor2,$logocolor3,$logocolor4){
-        svg {
-            path {
-                fill: map-get($logocolor3, $logocolor4);
-            }
-            :first-child{
-                fill: map-get($logocolor1, $logocolor2);
-            }
+;
+
+@mixin Logo-color($logocolor1, $logocolor2, $logocolor3, $logocolor4) {
+    .hlegal {
+        max-width: 81.612713%;
+        max-height: 100%;
+    }
+
+    .slash {
+        max-width: 13.678634%;
+        max-height: 81.25%;
+    }
+    svg {
+        path {
+            fill: map-get($logocolor3, $logocolor4);
         }
+
+        :first-child {
+            fill: map-get($logocolor1, $logocolor2);
+        }
+    }
 }
+
+;
 
 div.logo {
     min-width: 69.33px + 4px + 11.62px;
     min-height: 32px;
     position: relative;
+
     a {
         display: Flex;
         position: absolute;
         justify-content: space-between;
+
         .hlegal {
             max-width: 81.612713%;
             max-height: 100%;
         }
+
         .slash {
             max-width: 13.678634%;
             max-height: 81.25%;
         }
     }
 }
+
+;
+
+
+@mixin svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor($DivWidth, $DivHeight, $DivBg, $SvgWidth, $SvgHeight, $PathColor) {
+    width: $DivWidth;
+    height: $DivHeight;
+    background: $DivBg;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    min-height: 24px;
+
+
+    svg {
+        width: $SvgWidth;
+        height: $SvgHeight;
+        display: inline-flex;
+        position: relative;
+        min-width: 24px;
+        min-height: 24px;
+
+        path {
+            fill: $PathColor;
+        }
+    }
+}
+
+;
+
+@mixin logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild($DivWidth, $DivHeight, $DivBg, $PathColorFerstChild, $Pathcolor) {
+    width: $DivWidth;
+    height: $DivHeight;
+    background: $DivBg;
+    display: inline-flex;
+    position: relative;
+    min-width: 84.95px;
+    min-height: 32px;
+    justify-content: space-between;
+
+    .hledal {
+        max-width: 81.612713%;
+        max-height: 100%;
+    }
+
+    ;
+
+    .slash {
+        max-width: 13.678634%;
+        max-height: 81.25%;
+    }
+    svg {
+        path {
+            fill: $Pathcolor;
+        }
+
+        :first-child {
+            fill: $PathColorFerstChild;
+        }
+    }
+}
+
+;
+.logo1{
+    width: 69.33px + 4px + 11.62px;
+    height: 32px;
+    display: inline-flex;
+    position: relative;
+    justify-content: space-between;
+    .hlegal {
+        max-width: 81.612713%;
+        max-height: 100%;
+    }
+
+    .slash {
+        max-width: 13.678634%;
+        max-height: 81.25%;
+    }
+    svg {
+        path {
+            fill: red;
+        }
+
+        :first-child {
+            fill: green;
+        }
+    }
+};

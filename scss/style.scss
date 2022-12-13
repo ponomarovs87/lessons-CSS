@@ -4,17 +4,41 @@
 .FB {
     width: 38px;
     height: 38px;
+
     a {
         @include FB-color($main, regular);
+
         &:hover {
             @include FB-color($active, regular);
         }
     }
 }
+
+;
+
 .logo {
     width: 69.33px + 4px + 11.62px;
     height: 32px;
+
     a {
         @include Logo-color($accent, regular, $main, regular);
     }
+}
+
+;
+
+.svg-50x50bgnone-38x38-MaRe {
+    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(20px, 20px, $accent-regular, 38px, 38px, $main-regular);
+
+}
+
+;
+
+.log-10x10bgnone-AcRe-MaRe {
+    @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(10px, 10px, red, $accent-regular, $main-regular);
+}
+
+;
+.log-100x100bgnone-AcRe-MaRe {
+    @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(100px, 100px, none, $accent-regular, $main-regular);
 }

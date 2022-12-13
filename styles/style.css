@@ -147,6 +147,28 @@ div.logo a .slash {
   max-height: 81.25%;
 }
 
+.logo1 {
+  width: 84.95px;
+  height: 32px;
+  display: inline-flex;
+  position: relative;
+  justify-content: space-between;
+}
+.logo1 .hlegal {
+  max-width: 81.612713%;
+  max-height: 100%;
+}
+.logo1 .slash {
+  max-width: 13.678634%;
+  max-height: 81.25%;
+}
+.logo1 svg path {
+  fill: red;
+}
+.logo1 svg :first-child {
+  fill: green;
+}
+
 .FB {
   width: 38px;
   height: 38px;
@@ -162,9 +184,90 @@ div.logo a .slash {
   width: 84.95px;
   height: 32px;
 }
+.logo a .hlegal {
+  max-width: 81.612713%;
+  max-height: 100%;
+}
+.logo a .slash {
+  max-width: 13.678634%;
+  max-height: 81.25%;
+}
 .logo a svg path {
   fill: #323264;
 }
 .logo a svg :first-child {
+  fill: #f0145a;
+}
+
+.svg-50x50bgnone-38x38-MaRe {
+  width: 20px;
+  height: 20px;
+  background: #f0145a;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+}
+.svg-50x50bgnone-38x38-MaRe svg {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  position: relative;
+  min-width: 24px;
+  min-height: 24px;
+}
+.svg-50x50bgnone-38x38-MaRe svg path {
+  fill: #323264;
+}
+
+.log-10x10bgnone-AcRe-MaRe {
+  width: 10px;
+  height: 10px;
+  background: red;
+  display: inline-flex;
+  position: relative;
+  min-width: 84.95px;
+  min-height: 32px;
+  justify-content: space-between;
+}
+.log-10x10bgnone-AcRe-MaRe .hledal {
+  max-width: 81.612713%;
+  max-height: 100%;
+}
+.log-10x10bgnone-AcRe-MaRe .slash {
+  max-width: 13.678634%;
+  max-height: 81.25%;
+}
+.log-10x10bgnone-AcRe-MaRe svg path {
+  fill: #323264;
+}
+.log-10x10bgnone-AcRe-MaRe svg :first-child {
+  fill: #f0145a;
+}
+
+.log-100x100bgnone-AcRe-MaRe {
+  width: 100px;
+  height: 100px;
+  background: none;
+  display: inline-flex;
+  position: relative;
+  min-width: 84.95px;
+  min-height: 32px;
+  justify-content: space-between;
+}
+.log-100x100bgnone-AcRe-MaRe .hledal {
+  max-width: 81.612713%;
+  max-height: 100%;
+}
+.log-100x100bgnone-AcRe-MaRe .slash {
+  max-width: 13.678634%;
+  max-height: 81.25%;
+}
+.log-100x100bgnone-AcRe-MaRe svg path {
+  fill: #323264;
+}
+.log-100x100bgnone-AcRe-MaRe svg :first-child {
   fill: #f0145a;
 }
