@@ -1,64 +1,5 @@
 @import "_colors.scss";
 
-
-@mixin FB-color($fbcolor1, $fbcolor2) {
-    svg {
-        path {
-            fill: map-get($fbcolor1, $fbcolor2);
-        }
-    }
-}
-
-;
-
-@mixin Logo-color($logocolor1, $logocolor2, $logocolor3, $logocolor4) {
-    .hlegal {
-        max-width: 81.612713%;
-        max-height: 100%;
-    }
-
-    .slash {
-        max-width: 13.678634%;
-        max-height: 81.25%;
-    }
-    svg {
-        path {
-            fill: map-get($logocolor3, $logocolor4);
-        }
-
-        :first-child {
-            fill: map-get($logocolor1, $logocolor2);
-        }
-    }
-}
-
-;
-
-div.logo {
-    min-width: 69.33px + 4px + 11.62px;
-    min-height: 32px;
-    position: relative;
-
-    a {
-        display: Flex;
-        position: absolute;
-        justify-content: space-between;
-
-        .hlegal {
-            max-width: 81.612713%;
-            max-height: 100%;
-        }
-
-        .slash {
-            max-width: 13.678634%;
-            max-height: 81.25%;
-        }
-    }
-}
-
-;
-
-
 @mixin svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor($DivWidth, $DivHeight, $DivBg, $SvgWidth, $SvgHeight, $PathColor) {
     width: $DivWidth;
     height: $DivHeight;
@@ -83,9 +24,7 @@ div.logo {
             fill: $PathColor;
         }
     }
-}
-
-;
+};
 
 @mixin logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild($DivWidth, $DivHeight, $DivBg, $PathColorFerstChild, $Pathcolor) {
     width: $DivWidth;
@@ -95,53 +34,41 @@ div.logo {
     position: relative;
     min-width: 84.95px;
     min-height: 32px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 
-    .hledal {
-        max-width: 81.612713%;
+    span {
+        max-width: 100%;
         max-height: 100%;
-    }
+        display: flex;
+        position: absolute;
+        min-width: 84.95px;
+        min-height: 32px;
+        justify-content: space-between;
+        aspect-ratio: 2.6546875/1;
 
-    ;
-
-    .slash {
-        max-width: 13.678634%;
-        max-height: 81.25%;
-    }
-    svg {
-        path {
-            fill: $Pathcolor;
+        .hlegal {
+            max-width: 81.612713%;
+            max-height: 100%;
+            display: inline-flex;
         }
 
-        :first-child {
-            fill: $PathColorFerstChild;
-        }
-    }
-}
+        ;
 
-;
-.logo1{
-    width: 69.33px + 4px + 11.62px;
-    height: 32px;
-    display: inline-flex;
-    position: relative;
-    justify-content: space-between;
-    .hlegal {
-        max-width: 81.612713%;
-        max-height: 100%;
-    }
-
-    .slash {
-        max-width: 13.678634%;
-        max-height: 81.25%;
-    }
-    svg {
-        path {
-            fill: red;
+        .slash {
+            max-width: 13.678634%;
+            max-height: 81.25%;
+            display: inline-flex;
         }
 
-        :first-child {
-            fill: green;
+        svg {
+            path {
+                fill: $Pathcolor;
+            }
+
+            :first-child {
+                fill: $PathColorFerstChild;
+            }
         }
     }
 };

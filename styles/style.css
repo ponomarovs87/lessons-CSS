@@ -24,40 +24,24 @@ svg {
   height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li,
-a {
+h1, h2, h3, h4, h5, h6, p, li, a {
   font-family: "Montserrat";
   font-style: normal;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   font-weight: 700;
 }
 
-h2,
-h3,
-h4 {
+h2, h3, h4 {
   color: #323264;
 }
 
-p,
-li,
-a {
+p, li, a {
   font-weight: 400;
 }
 
-p,
-a {
+p, a {
   font-size: 16px;
   height: 100%;
 }
@@ -67,15 +51,12 @@ a {
   font-weight: 700;
 }
 
-li,
-::marker {
+li, ::marker {
   font-size: 18px;
   line-height: 144%;
 }
 
-h1,
-.hero,
-.h1 {
+h1, .hero, .h1 {
   font-size: 38px;
   line-height: 46px;
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -84,33 +65,28 @@ h1,
   background-clip: text;
 }
 
-h2,
-.h2 {
+h2, .h2 {
   font-size: 30px;
   line-height: 37px;
 }
 
-h3,
-.h3 {
+h3, .h3 {
   font-size: 22px;
   line-height: 27px;
 }
-h3.caps,
-.h3.caps {
+h3.caps, .h3.caps {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-h4,
-.h4 {
+h4, .h4 {
   font-size: 16px;
   line-height: 20px;
 }
 
-p,
-.p {
+p, .p {
   line-height: 162%;
   color: #000000;
 }
@@ -128,81 +104,10 @@ a:hover {
   color: #f0145a;
 }
 
-div.logo {
-  min-width: 84.95px;
-  min-height: 32px;
-  position: relative;
-}
-div.logo a {
-  display: Flex;
-  position: absolute;
-  justify-content: space-between;
-}
-div.logo a .hlegal {
-  max-width: 81.612713%;
-  max-height: 100%;
-}
-div.logo a .slash {
-  max-width: 13.678634%;
-  max-height: 81.25%;
-}
-
-.logo1 {
-  width: 84.95px;
-  height: 32px;
-  display: inline-flex;
-  position: relative;
-  justify-content: space-between;
-}
-.logo1 .hlegal {
-  max-width: 81.612713%;
-  max-height: 100%;
-}
-.logo1 .slash {
-  max-width: 13.678634%;
-  max-height: 81.25%;
-}
-.logo1 svg path {
-  fill: red;
-}
-.logo1 svg :first-child {
-  fill: green;
-}
-
-.FB {
-  width: 38px;
-  height: 38px;
-}
-.FB a svg path {
-  fill: #323264;
-}
-.FB a:hover svg path {
-  fill: #24a3ff;
-}
-
-.logo {
-  width: 84.95px;
-  height: 32px;
-}
-.logo a .hlegal {
-  max-width: 81.612713%;
-  max-height: 100%;
-}
-.logo a .slash {
-  max-width: 13.678634%;
-  max-height: 81.25%;
-}
-.logo a svg path {
-  fill: #323264;
-}
-.logo a svg :first-child {
-  fill: #f0145a;
-}
-
 .svg-50x50bgnone-38x38-MaRe {
   width: 20px;
   height: 20px;
-  background: #f0145a;
+  background: none;
   display: inline-flex;
   position: relative;
   justify-content: center;
@@ -225,25 +130,38 @@ div.logo a .slash {
 .log-10x10bgnone-AcRe-MaRe {
   width: 10px;
   height: 10px;
-  background: red;
+  background: none;
   display: inline-flex;
   position: relative;
   min-width: 84.95px;
   min-height: 32px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
-.log-10x10bgnone-AcRe-MaRe .hledal {
+.log-10x10bgnone-AcRe-MaRe span {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  position: absolute;
+  min-width: 84.95px;
+  min-height: 32px;
+  justify-content: space-between;
+  aspect-ratio: 2.6546875/1;
+}
+.log-10x10bgnone-AcRe-MaRe span .hlegal {
   max-width: 81.612713%;
   max-height: 100%;
+  display: inline-flex;
 }
-.log-10x10bgnone-AcRe-MaRe .slash {
+.log-10x10bgnone-AcRe-MaRe span .slash {
   max-width: 13.678634%;
   max-height: 81.25%;
+  display: inline-flex;
 }
-.log-10x10bgnone-AcRe-MaRe svg path {
+.log-10x10bgnone-AcRe-MaRe span svg path {
   fill: #323264;
 }
-.log-10x10bgnone-AcRe-MaRe svg :first-child {
+.log-10x10bgnone-AcRe-MaRe span svg :first-child {
   fill: #f0145a;
 }
 
@@ -255,19 +173,32 @@ div.logo a .slash {
   position: relative;
   min-width: 84.95px;
   min-height: 32px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
-.log-100x100bgnone-AcRe-MaRe .hledal {
+.log-100x100bgnone-AcRe-MaRe span {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  position: absolute;
+  min-width: 84.95px;
+  min-height: 32px;
+  justify-content: space-between;
+  aspect-ratio: 2.6546875/1;
+}
+.log-100x100bgnone-AcRe-MaRe span .hlegal {
   max-width: 81.612713%;
   max-height: 100%;
+  display: inline-flex;
 }
-.log-100x100bgnone-AcRe-MaRe .slash {
+.log-100x100bgnone-AcRe-MaRe span .slash {
   max-width: 13.678634%;
   max-height: 81.25%;
+  display: inline-flex;
 }
-.log-100x100bgnone-AcRe-MaRe svg path {
+.log-100x100bgnone-AcRe-MaRe span svg path {
   fill: #323264;
 }
-.log-100x100bgnone-AcRe-MaRe svg :first-child {
+.log-100x100bgnone-AcRe-MaRe span svg :first-child {
   fill: #f0145a;
 }

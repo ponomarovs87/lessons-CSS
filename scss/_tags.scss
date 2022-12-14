@@ -13,68 +13,53 @@ svg {
     height: 100%;
 };
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li,
-a {
+h1,h2,h3,h4,h5,h6,p,li,a {
     font-family: "Montserrat";
     font-style: normal;
 };
-h1,
-h2,
-h3,
-h4 {
+
+h1,h2,h3,h4 {
     font-weight: 700;
 };
 
-h2,
-h3,
-h4 {
-    color: map-get($main, regular);
+h2,h3,h4 {
+    color: $main-regular;
 };
-p,
-li,
-a {
+
+p,li,a {
     font-weight: 400;
 };
-p,
-a {
+
+p,a {
     font-size: 16px;
     height: 100%;
 };
+
 ::marker {
-    color: map-get($accent, regular);
+    color: $accent-regular;
     font-weight: 700;
 };
-li,
-::marker {
+li,::marker {
     font-size: 18px;
     line-height: 144%;
     // or 26px
 };
 
-h1,
-.hero,
-.h1 {
+h1,.hero,.h1 {
     font-size: 38px;
     line-height: 46px;
-    background: map-get($gradient, redtext);
+    background: $gradient-redtext;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 };
-h2,
-.h2 {
+
+h2,.h2 {
     font-size: 30px;
     line-height: 37px;
 };
-h3,
-.h3 {
+
+h3,.h3 {
     font-size: 22px;
     line-height: 27px;
     &.caps {
@@ -84,25 +69,27 @@ h3,
         text-transform: uppercase;
     }
 };
-h4,
-.h4 {
+
+h4,.h4 {
     font-size: 16px;
     line-height: 20px;
 };
-p,
-.p {
+
+p,.p {
     line-height: 162%;
     // or 26px
     color: #000000;
 };
+
 li {
     color: #000000;
 };
+
 a {
     line-height: 20px;
-    color: map-get($active, regular);
+    color: $active-regular;
     text-decoration: none;
     &:hover {
-        color: map-get($accent, regular);
+        color: $accent-regular;
     }
 };
