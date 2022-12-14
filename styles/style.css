@@ -150,7 +150,55 @@ a:hover {
   max-height: 100%;
 }
 .svg-50x50bgnone-38x38-MaRe svg path {
+  fill: #f0145a;
+}
+.svg-50x50bgnone-38x38-MaRe:hover {
+  width: 55px;
+  height: 55px;
+  background: none;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+}
+.svg-50x50bgnone-38x38-MaRe:hover svg {
+  width: 338px;
+  height: 338px;
+  display: inline-flex;
+  position: relative;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.svg-50x50bgnone-38x38-MaRe:hover svg path {
   fill: #323264;
+}
+.svg-50x50bgnone-38x38-MaRe:active {
+  width: 55px;
+  height: 55px;
+  background: none;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+}
+.svg-50x50bgnone-38x38-MaRe:active svg {
+  width: 338px;
+  height: 338px;
+  display: inline-flex;
+  position: relative;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.svg-50x50bgnone-38x38-MaRe:active svg path {
+  fill: #000000;
 }
 
 .log-10x10bgnone-AcRe-MaRe {
