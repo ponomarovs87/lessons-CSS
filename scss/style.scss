@@ -4,11 +4,18 @@
 .svg-50x50bgnone-38x38-MaRe {
     @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(20px, 20px, none, 38px, 38px, $main-regular);
 
-};
+}
+
+;
 
 .log-10x10bgnone-AcRe-MaRe {
     @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(10px, 10px, none, $accent-regular, $main-regular);
-};
+}
+
+;
+
 .log-100x100bgnone-AcRe-MaRe {
     @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(100px, 100px, none, $accent-regular, $main-regular);
-};
+}
+
+;

@@ -24,7 +24,9 @@
             fill: $PathColor;
         }
     }
-};
+}
+
+;
 
 @mixin logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild($DivWidth, $DivHeight, $DivBg, $PathColorFerstChild, $Pathcolor) {
     width: $DivWidth;
@@ -71,4 +73,6 @@
             }
         }
     }
-};
+}
+
+;
