@@ -526,28 +526,16 @@ a:hover {
   margin-block: 0px;
 }
 .header .pages {
+  content: "";
   min-height: 162px;
 }
 .header .pages div {
   position: absolute;
   float: right;
-  right: 15px;
-  top: 57.5px;
-}
-.header .pages div:hover div {
-  content: "";
-  position: absolute;
-  background: #323264;
-  height: 100vh;
-  width: 100vw;
-  z-index: 5;
-  top: -57.5px;
-  right: -15px;
-}
-.header .pages div:hover div .menusheet {
-  display: flex;
-  list-style-type: none;
-  top: 316px;
+  top: 0;
+  right: 0;
+  margin-right: 15px;
+  margin-top: 57.5px;
 }
 .header .pages .menusheet {
   display: none;

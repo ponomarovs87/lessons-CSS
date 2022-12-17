@@ -182,32 +182,60 @@
     ;
 
     .pages {
+        content: "";
         min-height: 162px;
+        // &:active {
+        //     div {
+        //         margin:0;
+        //         position: absolute;
+        //         background: $main-regular;
+        //         height: 100vh;
+        //         width: 100vw;
+        //         z-index: 5;
 
+        //         .menusheet {
+        //             top: 316px;
+        //             display: flex;
+        //             flex-direction: column;
+        //             gap: 20px;
+        //             position: absolute;
+        //             width: calc(100vw - 16px);
+        //             right: 8px;
+        //             left:8px;
+        //             bottom: 0px;
+        //             background: $basic-color-white;
+        //             border-radius: 12px 12px 0px 0px;
+        //             align-items:center;
+
+        //             a {
+        //                 display: flex;
+        //                 flex-direction: row;
+        //                 justify-content: center;
+        //                 align-items: flex-start;
+        //                 padding: 7px 0px;
+        //                 gap: 10px;
+        //                 width: 335px;
+        //                 background: $grey-bg;
+        //                 border-radius: 12px;
+        //                 height: 29px;
+        //                 font-weight: 700;
+        //                 font-size: 24px;
+        //                 line-height: 29px;
+        //                 text-align: center;
+        //             }
+        //         }
+        //     }
+        // }
+            
         div {
             position: absolute;
             float: right;
-            right: 15px;
-            top: 45px+12.5px;
+            top: 0;
+            right: 0;
+            margin-right: 15px;
+            margin-top: 45px+12.5px;
 
-            &:hover {
-                div {
-                    content: "";
-                    position: absolute;
-                    background: $main-regular;
-                    height: 100vh;
-                    width: 100vw;
-                    z-index: 5;
-                    top: -45px-12.5px;
-                    right: -15px;
-                    .menusheet {
-                        display: flex;
-                        // position: absolute;
-                        list-style-type: none;
-                        top: 316px;
-                    }
-                }
-            }
+           
         }
 
         .menusheet {
