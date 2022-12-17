@@ -30,7 +30,7 @@
 
 ;
 
-@mixin logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild($DivWidth, $DivHeight, $DivBg, $PathColorFerstChild, $Pathcolor) {
+@mixin logo-slach-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild($DivWidth, $DivHeight, $DivBg, $PathColorFerstChild, $Pathcolor) {
     width: $DivWidth;
     height: $DivHeight;
     background: $DivBg;
@@ -75,6 +75,39 @@
             }
         }
     }
+}
+
+;
+
+@mixin logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild($DivWidth, $DivHeight, $DivBg, $PathColorFerstChild, $Pathcolor) {
+    width: $DivWidth;
+    height: $DivHeight;
+    background: $DivBg;
+    display: inline-flex;
+    position: relative;
+    min-width: 84.95px;
+    min-height: 32px;
+    align-items: center;
+    justify-content: center;
+
+    .hlegal {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-flex;
+    }
+
+    ;
+
+    svg {
+        path {
+            fill: $Pathcolor;
+        }
+
+        :first-child {
+            fill: $PathColorFerstChild;
+        }
+    }
+
 }
 
 ;

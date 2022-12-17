@@ -2,25 +2,60 @@
 @import "_logo.scss";
 
 .svg-50x50bgnone-38x38-MaRe {
-    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(50px, 50px, none, 38px, 38px,$accent-regular);
-&:hover{
-    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(55px, 55px, none, 338px, 338px, $main-regular);
-}
-&:active{
-    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(55px, 55px, none, 338px, 338px, $basic-color-black);
-}
+    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(50px, 50px, none, 38px, 38px, $accent-regular);
+
+    &:hover {
+        @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(55px, 55px, none, 338px, 338px, $main-regular);
+    }
+
+    &:active {
+        @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(55px, 55px, none, 338px, 338px, $basic-color-black);
+    }
 }
 
 ;
 
 .log-10x10bgnone-AcRe-MaRe {
-    @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(10px, 10px, none, $accent-regular, $main-regular);
+    @include logo-slach-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(10px, 10px, none, $accent-regular, $main-regular);
 }
 
 ;
 
 .log-100x100bgnone-AcRe-MaRe {
-    @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(100px, 100px, none, $accent-regular, $main-regular);
+    @include logo-slach-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(100px, 100px, none, $accent-regular, $main-regular);
 }
 
 ;
+
+.log-130x60bgnone-AcRe-MaRe {
+    @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(130px, 60px, none, $accent-regular, $main-regular);
+}
+
+;
+
+.svg-21x47bgnone-21x47-AcRe {
+    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(21px, 47px, none, 21px, 47px, $accent-regular);
+}
+
+;
+
+.log-slash-namepage-inter4px {
+    background: green;
+    display: inline-flex;
+    align-items: flex-start;
+    :nth-child(2n){
+        margin: 0 4px;
+    }
+}
+
+;
+
+.NamePage-height44-fs36-lh44-MaRe {
+    height: 44px;
+    font-size: 36px;
+    line-height: 44px;
+    color: $main-regular;
+    display: inline-flex;
+    position: relative;
+    margin-block: 0px;
+}
