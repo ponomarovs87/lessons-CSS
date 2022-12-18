@@ -156,7 +156,7 @@ a:hover {
   display: inline-flex;
   position: relative;
   min-width: 11.62px;
-  min-height: 24px;
+  min-height: 18px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -181,7 +181,7 @@ a:hover {
   display: inline-flex;
   position: relative;
   min-width: 11.62px;
-  min-height: 24px;
+  min-height: 18px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -206,7 +206,7 @@ a:hover {
   display: inline-flex;
   position: relative;
   min-width: 11.62px;
-  min-height: 24px;
+  min-height: 18px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -354,7 +354,7 @@ a:hover {
   display: inline-flex;
   position: relative;
   min-width: 11.62px;
-  min-height: 24px;
+  min-height: 18px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -380,13 +380,39 @@ a:hover {
   display: inline-flex;
   position: relative;
   min-width: 11.62px;
-  min-height: 24px;
+  min-height: 18px;
   max-width: 100%;
   max-height: 100%;
 }
 .svg-1162x26bgnone-1162x26-AcRe svg path {
   fill: #f0145a;
   stroke: #f0145a;
+}
+
+.svg-32x32bgnone-32x32-BaCoNe {
+  width: 32px;
+  height: 32px;
+  background: none;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 11.62px;
+  min-height: 24px;
+}
+.svg-32x32bgnone-32x32-BaCoNe svg {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  position: relative;
+  min-width: 11.62px;
+  min-height: 18px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.svg-32x32bgnone-32x32-BaCoNe svg path {
+  fill: #EC6F5D;
+  stroke: #EC6F5D;
 }
 
 .svg-32x32bgnone-32x32-MaRe-active {
@@ -406,7 +432,7 @@ a:hover {
   display: inline-flex;
   position: relative;
   min-width: 11.62px;
-  min-height: 24px;
+  min-height: 18px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -432,7 +458,7 @@ a:hover {
   display: inline-flex;
   position: relative;
   min-width: 11.62px;
-  min-height: 24px;
+  min-height: 18px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -558,6 +584,10 @@ a:hover {
   background: #ffffff;
   border-radius: 12px 12px 0px 0px;
 }
+.header input:checked ~ .hamburgermenu div label {
+  width: 32px;
+  height: 32px;
+}
 .header input:checked ~ .hamburgermenu div ul {
   list-style: none;
   display: flex;
@@ -581,6 +611,13 @@ a:hover {
   line-height: 29px;
   min-height: 20px;
   max-height: 43px;
+}
+.header input:checked ~ .hamburgermenu div ul li a:hover {
+  background: #e6e6f0;
+  color: #24a3ff;
+}
+.header input:checked ~ .hamburgermenu div ul li .active-page {
+  color: #f0145a;
 }
 
 .boxheader {

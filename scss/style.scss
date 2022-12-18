@@ -52,6 +52,13 @@
 
 ;
 
+.svg-32x32bgnone-32x32-BaCoNe {
+    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(32px, 32px, none, 32px, 32px, $basic-color-negative);
+
+}
+
+;
+
 .svg-32x32bgnone-32x32-MaRe-active {
     @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(32px, 32px, none, 32px, 32px, $main-regular);
 
@@ -220,6 +227,14 @@
             background: $basic-color-white;
             border-radius: 12px 12px 0px 0px;
 
+            label {
+                width: 32px;
+                height: 32px;
+
+            }
+
+            ;
+
             ul {
                 list-style: none;
                 display: flex;
@@ -246,9 +261,24 @@
                         line-height: 29px;
                         min-height: 20px;
                         max-height: 43px;
+
+                        &:hover {
+                            background: $grey-separator;
+                            color: $active-regular;
+                        }
+
+                        ;
                     }
 
                     ;
+
+                    .active-page {
+                        color: $accent-regular;
+                    }
+
+                    ;
+
+
                 }
 
                 ;
