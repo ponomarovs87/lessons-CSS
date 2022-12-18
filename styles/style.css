@@ -389,7 +389,7 @@ a:hover {
   stroke: #f0145a;
 }
 
-.svg-32x32bgnone-32x32-MaRe {
+.svg-32x32bgnone-32x32-MaRe-active {
   width: 32px;
   height: 32px;
   background: none;
@@ -400,7 +400,7 @@ a:hover {
   min-width: 11.62px;
   min-height: 24px;
 }
-.svg-32x32bgnone-32x32-MaRe svg {
+.svg-32x32bgnone-32x32-MaRe-active svg {
   width: 32px;
   height: 32px;
   display: inline-flex;
@@ -410,11 +410,11 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
 }
-.svg-32x32bgnone-32x32-MaRe svg path {
+.svg-32x32bgnone-32x32-MaRe-active svg path {
   fill: #323264;
   stroke: #323264;
 }
-.svg-32x32bgnone-32x32-MaRe:active {
+.svg-32x32bgnone-32x32-MaRe-active:active {
   width: 32px;
   height: 32px;
   background: #e6e6f0;
@@ -426,7 +426,7 @@ a:hover {
   min-height: 24px;
   border-radius: 8px;
 }
-.svg-32x32bgnone-32x32-MaRe:active svg {
+.svg-32x32bgnone-32x32-MaRe-active:active svg {
   width: 32px;
   height: 32px;
   display: inline-flex;
@@ -436,7 +436,7 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
 }
-.svg-32x32bgnone-32x32-MaRe:active svg path {
+.svg-32x32bgnone-32x32-MaRe-active:active svg path {
   fill: #323264;
   stroke: #323264;
 }
@@ -525,20 +525,61 @@ a:hover {
   position: relative;
   margin-block: 0px;
 }
-.header .pages {
-  content: "";
-  min-height: 162px;
-}
-.header .pages div {
+.header .hamburgersvg {
   position: absolute;
   float: right;
-  top: 0;
-  right: 0;
-  margin-right: 15px;
-  margin-top: 57.5px;
+  top: 57.5px;
+  right: 15px;
 }
-.header .pages .menusheet {
+.header input,
+.header .hamburgermenu {
   display: none;
+  position: absolute;
+  top: 0;
+}
+.header input:checked ~ .hamburgermenu {
+  min-height: 162px;
+  display: flex;
+  background: #323264;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+}
+.header input:checked ~ .hamburgermenu div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 12px;
+  gap: 20px;
+  position: absolute;
+  width: calc(100vw - 16px - 24px);
+  right: 8px;
+  bottom: 0px;
+  background: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+}
+.header input:checked ~ .hamburgermenu div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  align-self: center;
+  justify-content: space-between;
+}
+.header input:checked ~ .hamburgermenu div ul li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw + 335px - 375px);
+  height: calc(100vh - 624px );
+  padding: 7px 0px;
+  background: #f5f5fa;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  min-height: 20px;
 }
 
 .boxheader {

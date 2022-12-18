@@ -52,7 +52,7 @@
 
 ;
 
-.svg-32x32bgnone-32x32-MaRe {
+.svg-32x32bgnone-32x32-MaRe-active {
     @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(32px, 32px, none, 32px, 32px, $main-regular);
 
     &:active {
@@ -181,67 +181,85 @@
 
     ;
 
-    .pages {
-        content: "";
-        min-height: 162px;
-        // &:active {
-        //     div {
-        //         margin:0;
-        //         position: absolute;
-        //         background: $main-regular;
-        //         height: 100vh;
-        //         width: 100vw;
-        //         z-index: 5;
-
-        //         .menusheet {
-        //             top: 316px;
-        //             display: flex;
-        //             flex-direction: column;
-        //             gap: 20px;
-        //             position: absolute;
-        //             width: calc(100vw - 16px);
-        //             right: 8px;
-        //             left:8px;
-        //             bottom: 0px;
-        //             background: $basic-color-white;
-        //             border-radius: 12px 12px 0px 0px;
-        //             align-items:center;
-
-        //             a {
-        //                 display: flex;
-        //                 flex-direction: row;
-        //                 justify-content: center;
-        //                 align-items: flex-start;
-        //                 padding: 7px 0px;
-        //                 gap: 10px;
-        //                 width: 335px;
-        //                 background: $grey-bg;
-        //                 border-radius: 12px;
-        //                 height: 29px;
-        //                 font-weight: 700;
-        //                 font-size: 24px;
-        //                 line-height: 29px;
-        //                 text-align: center;
-        //             }
-        //         }
-        //     }
-        // }
-            
-        div {
-            position: absolute;
-            float: right;
-            top: 0;
-            right: 0;
-            margin-right: 15px;
-            margin-top: 45px+12.5px;
-
-           
-        }
-
-        .menusheet {
-            display: none;
-        }
+    .hamburgersvg {
+        position: absolute;
+        float: right;
+        top: 45px+12.5px;
+        right: 15px;
     }
+
+    ;
+
+    input,
+    .hamburgermenu {
+        display: none;
+        position: absolute;
+        top: 0;
+    }
+
+    ;
+
+    input:checked~.hamburgermenu {
+        min-height: 162px;
+        display: flex;
+        background: $main-regular;
+        height: 100vh;
+        width: 100vw;
+        z-index: 5;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 12px;
+            gap: 20px;
+            position: absolute;
+            width: calc(100vw - 16px - 24px);
+            right: 8px;
+            bottom: 0px;
+            background: $basic-color-white;
+            border-radius: 12px 12px 0px 0px;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                align-self: center;
+                justify-content: space-between;
+
+                li {
+
+
+                    a {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: calc(100vw + 335px - 375px);
+                        height: calc(100vh - 624px );
+                        padding: 7px 0px;
+                        background: $grey-bg;
+                        border-radius: 12px;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                        min-height: 20px;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
 }
 
 ;
