@@ -1,75 +1,4 @@
-@import "_tags.scss";
-@import "_logo.scss";
-
-.svg-50x50bgnone-38x38-MaRe {
-    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(50px, 50px, none, 38px, 38px, $accent-regular);
-
-    &:hover {
-        @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(55px, 55px, none, 338px, 338px, $main-regular);
-    }
-
-    &:active {
-        @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(55px, 55px, none, 338px, 338px, $basic-color-black);
-    }
-}
-
-;
-
-.log-10x10bgnone-AcRe-MaRe {
-    @include logo-slach-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(10px, 10px, none, $accent-regular, $main-regular);
-}
-
-;
-
-.log-100x100bgnone-AcRe-MaRe {
-    @include logo-slach-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(100px, 100px, none, $accent-regular, $main-regular);
-}
-
-;
-
-
-.log-130x60bgnone-AcRe-MaRe {
-    @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(130px, 60px, none, $accent-regular, $main-regular);
-}
-
-;
-
-.log-6933x32bgnone-AcRe-MaRe {
-    @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(69.33px, 32px, none, $accent-regular, $main-regular);
-}
-
-;
-
-.svg-21x47bgnone-21x47-AcRe {
-    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(21px, 47px, none, 21px, 47px, $accent-regular);
-}
-
-;
-
-.svg-1162x26bgnone-1162x26-AcRe {
-    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(11.62px, 26px, none, 11.62px, 26px, $accent-regular);
-}
-
-;
-
-.svg-32x32bgnone-32x32-BaCoNe {
-    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(32px, 32px, none, 32px, 32px, $basic-color-negative);
-
-}
-
-;
-
-.svg-32x32bgnone-32x32-MaRe-active {
-    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(32px, 32px, none, 32px, 32px, $main-regular);
-
-    &:active {
-        @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(32px, 32px, $grey-separator, 32px, 32px, $main-regular);
-        border-radius: 8px;
-    }
-}
-
-;
-
+@import "_media.scss";
 
 .NamePage-height44-fs36-lh44-MaRe {
     height: 44px;
@@ -102,7 +31,7 @@
         z-index: -1;
         display: flex;
         height: 0px;
-        width: 100%;
+        width: 100vw;
         height: 57px;
         background: $basic-color-white;
     }
@@ -299,6 +228,84 @@
 .boxheader {
     content: "";
     height: 57px+45px;
+}
+
+;
+
+.footer {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    background: $grey-bg;
+    z-index: -1;
+
+    ul {
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px auto 0;
+
+        li {
+            a {
+                font-weight: 700;
+
+            }
+
+            ;
+        }
+
+        ;
+
+
+    }
+
+    ;
+
+    .footer-adress-OnMap {
+        li {
+            a {
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 15px;
+                text-transform: uppercase;
+                
+            }
+
+            ;
+        }
+
+        ;
+
+       
+    }
+
+    ;
+    .footer-contact-information {
+        :nth-child(2) {
+            a {
+                color: $main-alt;
+                
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
+
+    .llc {
+        color: $grey-text;
+        line-height: 20px;
+        margin: 30px auto;
+    }
+
+    ;
 }
 
 ;
