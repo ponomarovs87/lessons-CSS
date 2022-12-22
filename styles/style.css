@@ -531,6 +531,7 @@ a:hover {
 .header {
   position: fixed;
   min-width: 250px;
+  z-index: 20;
 }
 .header .boxgrey {
   z-index: -1;
@@ -622,7 +623,7 @@ a:hover {
   width: 100vw;
   z-index: 5;
 }
-.header input:checked ~ .hamburgermenu div {
+.header input:checked ~ .hamburgermenu nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -635,11 +636,11 @@ a:hover {
   background: #ffffff;
   border-radius: 12px 12px 0px 0px;
 }
-.header input:checked ~ .hamburgermenu div label {
+.header input:checked ~ .hamburgermenu nav label {
   width: 32px;
   height: 32px;
 }
-.header input:checked ~ .hamburgermenu div ul {
+.header input:checked ~ .hamburgermenu nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -648,7 +649,7 @@ a:hover {
   align-self: center;
   justify-content: space-between;
 }
-.header input:checked ~ .hamburgermenu div ul li a {
+.header input:checked ~ .hamburgermenu nav ul li a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -663,11 +664,11 @@ a:hover {
   min-height: 20px;
   max-height: 43px;
 }
-.header input:checked ~ .hamburgermenu div ul li a:hover {
+.header input:checked ~ .hamburgermenu nav ul li a:hover {
   background: #e6e6f0;
   color: #24a3ff;
 }
-.header input:checked ~ .hamburgermenu div ul li .active-page {
+.header input:checked ~ .hamburgermenu nav ul li .active-page {
   color: #f0145a;
 }
 
@@ -684,7 +685,6 @@ a:hover {
   flex-direction: column;
   align-items: center;
   background: #f5f5fa;
-  z-index: -1;
 }
 .footer ul {
   list-style: none;
