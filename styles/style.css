@@ -792,6 +792,13 @@ a:hover {
   align-items: center;
   background: #f5f5fa;
 }
+.footer .separator {
+  background: #e6e6f0;
+  height: 2px;
+  left: 30px;
+  right: 30px;
+  position: absolute;
+}
 .footer ul {
   list-style: none;
   display: inline-flex;
@@ -807,6 +814,9 @@ a:hover {
   letter-spacing: 1px;
   line-height: 15px;
   text-transform: uppercase;
+}
+.footer .footer-contact-information :first-child {
+  height: 38px;
 }
 .footer .footer-contact-information :nth-child(2) a {
   color: #46466e;
@@ -896,6 +906,28 @@ a:hover {
   .boxheader {
     height: 220px;
   }
+
+  .footer .separator {
+    left: 60px;
+    right: 60px;
+  }
+  .footer ul {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer ul li::marker {
+    color: #B3B3BA;
+  }
+  .footer ul :first-child {
+    list-style-type: none;
+  }
+  .footer ul :nth-child(n+2) {
+    margin-left: 26px;
+  }
+  .footer .footer-contact-information {
+    margin: 21px auto 0;
+  }
 }
 @media (min-width: 1024px) {
   .header {
@@ -924,6 +956,32 @@ a:hover {
   .header .boxheader {
     height: 176px;
   }
+
+  .footer {
+    height: 141px;
+  }
+  .footer .separator {
+    position: absolute;
+    top: 0;
+  }
+  .footer .footer-adress-OnMap {
+    position: absolute;
+    left: 60px;
+    top: 32px;
+    margin: 0;
+  }
+  .footer .footer-contact-information {
+    position: absolute;
+    left: 60px;
+    top: 73px;
+    margin: 0;
+  }
+  .footer .llc {
+    position: absolute;
+    right: 60px;
+    top: 32px;
+    margin: 0;
+  }
 }
 @media (min-width: 1920px) {
   .header .language-nav {
@@ -947,5 +1005,15 @@ a:hover {
   }
   .header .boxheader {
     height: 176px;
+  }
+
+  .footer .footer-adress-OnMap {
+    left: 160px;
+  }
+  .footer .footer-contact-information {
+    left: 160px;
+  }
+  .footer .llc {
+    right: 160px;
   }
 }
