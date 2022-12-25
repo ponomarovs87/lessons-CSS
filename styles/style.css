@@ -826,9 +826,6 @@ a:hover {
   .header .boxgrey {
     display: none;
   }
-  .header .boxwhite {
-    display: none;
-  }
   .header .language-nav {
     top: 50px;
     left: 60px;
@@ -898,5 +895,57 @@ a:hover {
 
   .boxheader {
     height: 220px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 116px;
+  }
+  .header .language-nav {
+    right: 442px;
+    left: auto;
+  }
+  .header .contact-information {
+    right: 60px;
+    left: auto;
+  }
+  .header .log-slash-namepage-inter4px {
+    left: 60px;
+    top: 50px;
+  }
+  .header .hamburgermenu {
+    top: 91px;
+    left: auto;
+    right: 60px;
+  }
+  .header .hamburgermenu ul :nth-last-child(1) a {
+    margin-right: 0px;
+  }
+  .header .boxheader {
+    height: 176px;
+  }
+}
+@media (min-width: 1920px) {
+  .header .language-nav {
+    right: 542px;
+    left: auto;
+  }
+  .header .contact-information {
+    right: 160px;
+    left: auto;
+  }
+  .header .log-slash-namepage-inter4px {
+    left: 160px;
+  }
+  .header .hamburgermenu {
+    top: 91px;
+    left: auto;
+    right: 160px;
+  }
+  .header .hamburgermenu ul :nth-last-child(1) a {
+    margin-right: 0px;
+  }
+  .header .boxheader {
+    height: 176px;
   }
 }
