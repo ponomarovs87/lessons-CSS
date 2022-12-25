@@ -64,8 +64,7 @@ a {
   font-weight: 700;
 }
 
-li,
-::marker {
+li {
   font-size: 18px;
   line-height: 144%;
 }
@@ -157,7 +156,7 @@ a:hover {
   stroke: #f0145a;
 }
 
-.svg-1162x26bgnone-1162x26-AcRe {
+.svg-1162x26bgnone-1162x26-AcRe-media21x47 {
   width: 11.62px;
   height: 26px;
   background: none;
@@ -168,7 +167,7 @@ a:hover {
   min-width: 11.62px;
   min-height: 24px;
 }
-.svg-1162x26bgnone-1162x26-AcRe svg {
+.svg-1162x26bgnone-1162x26-AcRe-media21x47 svg {
   width: 11.62px;
   height: 26px;
   display: inline-flex;
@@ -178,9 +177,36 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
 }
-.svg-1162x26bgnone-1162x26-AcRe svg path {
+.svg-1162x26bgnone-1162x26-AcRe-media21x47 svg path {
   fill: #f0145a;
   stroke: #f0145a;
+}
+@media (min-width: 768px) {
+  .svg-1162x26bgnone-1162x26-AcRe-media21x47 {
+    width: 21px;
+    height: 47px;
+    background: none;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-width: 11.62px;
+    min-height: 24px;
+  }
+  .svg-1162x26bgnone-1162x26-AcRe-media21x47 svg {
+    width: 21px;
+    height: 47px;
+    display: inline-flex;
+    position: relative;
+    min-width: 11.62px;
+    min-height: 18px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .svg-1162x26bgnone-1162x26-AcRe-media21x47 svg path {
+    fill: #f0145a;
+    stroke: #f0145a;
+  }
 }
 
 .svg-32x32bgnone-32x32-BaCoNe {
@@ -388,6 +414,58 @@ a:hover {
   stroke: #000000;
 }
 
+.svg-24x24bgnone-24x24-GrTx {
+  width: 24px;
+  height: 24px;
+  background: none;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 11.62px;
+  min-height: 24px;
+}
+.svg-24x24bgnone-24x24-GrTx svg {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  position: relative;
+  min-width: 11.62px;
+  min-height: 18px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.svg-24x24bgnone-24x24-GrTx svg path {
+  fill: #B3B3BA;
+  stroke: #B3B3BA;
+}
+
+.svg-24x25bgnone-24x24-GrTx {
+  width: 24px;
+  height: 25px;
+  background: none;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 11.62px;
+  min-height: 24px;
+}
+.svg-24x25bgnone-24x24-GrTx svg {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  position: relative;
+  min-width: 11.62px;
+  min-height: 18px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.svg-24x25bgnone-24x24-GrTx svg path {
+  fill: #B3B3BA;
+  stroke: #B3B3BA;
+}
+
 .log-10x10bgnone-AcRe-MaRe {
   width: 10px;
   height: 10px;
@@ -487,7 +565,7 @@ a:hover {
   fill: #f0145a;
 }
 
-.log-6933x32bgnone-AcRe-MaRe {
+.log-6933x32bgnone-AcRe-MaRe-media130x60 {
   width: 69.33px;
   height: 32px;
   background: none;
@@ -498,16 +576,40 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-.log-6933x32bgnone-AcRe-MaRe .hlegal {
+.log-6933x32bgnone-AcRe-MaRe-media130x60 .hlegal {
   max-width: 100%;
   max-height: 100%;
   display: inline-flex;
 }
-.log-6933x32bgnone-AcRe-MaRe svg path {
+.log-6933x32bgnone-AcRe-MaRe-media130x60 svg path {
   fill: #323264;
 }
-.log-6933x32bgnone-AcRe-MaRe svg :first-child {
+.log-6933x32bgnone-AcRe-MaRe-media130x60 svg :first-child {
   fill: #f0145a;
+}
+@media (min-width: 768px) {
+  .log-6933x32bgnone-AcRe-MaRe-media130x60 {
+    width: 130px;
+    height: 60px;
+    background: none;
+    display: inline-flex;
+    position: relative;
+    min-width: 69.33px;
+    min-height: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+  .log-6933x32bgnone-AcRe-MaRe-media130x60 .hlegal {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-flex;
+  }
+  .log-6933x32bgnone-AcRe-MaRe-media130x60 svg path {
+    fill: #323264;
+  }
+  .log-6933x32bgnone-AcRe-MaRe-media130x60 svg :first-child {
+    fill: #f0145a;
+  }
 }
 
 .log-slash-namepage-inter4px {
@@ -532,6 +634,8 @@ a:hover {
   position: fixed;
   min-width: 250px;
   z-index: 20;
+  background: #ffffff;
+  min-height: 102px;
 }
 .header .boxgrey {
   z-index: -1;
@@ -541,52 +645,54 @@ a:hover {
   height: 45px;
   background: #f5f5fa;
 }
-.header .boxwhite {
-  z-index: -1;
-  display: flex;
-  height: 0px;
-  width: 100vw;
-  height: 57px;
-  background: #ffffff;
-}
-.header .language-page {
+.header .language-nav {
   position: absolute;
-  left: 15px;
   top: 10px;
+  left: 15px;
 }
-.header .language-page :nth-child(1n) {
-  width: 19px;
-  height: 15px;
-  padding: 5px 7px;
+.header .language-nav ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+.header .language-nav ul li {
+  font-size: unset;
+  line-height: unset;
+}
+.header .language-nav ul li a {
+  display: inline-flex;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1px;
   color: #B3B3BA;
-}
-.header .language-page .active-language {
-  color: #ffffff;
-  width: 33px;
   height: 25px;
+  width: 33px;
+  align-items: center;
+  justify-content: center;
+}
+.header .language-nav ul .active-language a {
   background: #f0145a;
   border-radius: 8px;
+  color: #ffffff;
 }
 .header .contact-information {
-  list-style-type: disc;
-  float: right;
   position: absolute;
   right: 15px;
   top: 12.5px;
+  list-style-type: none;
 }
-.header .contact-information :nth-child(odd) {
+.header .contact-information li {
   display: none;
+}
+.header .contact-information li img {
+  display: none;
+}
+.header .contact-information li a {
   color: #B3B3BA;
 }
-.header .contact-information :nth-child(2n) {
-  display: inline-block;
-  line-height: 20px;
+.header .contact-information :nth-child(2) {
+  display: block;
 }
-.header .contact-information :nth-child(2n) :first-child {
-  display: inline-block;
+.header .contact-information :nth-child(2) a {
   font-weight: 700;
 }
 .header .log-slash-namepage-inter4px {
@@ -629,7 +735,7 @@ a:hover {
   align-items: flex-end;
   padding: 12px;
   gap: 20px;
-  position: absolute;
+  position: fixed;
   width: calc(100vw - 16px - 24px);
   right: 8px;
   bottom: 0px;
@@ -709,4 +815,88 @@ a:hover {
   color: #B3B3BA;
   line-height: 20px;
   margin: 30px auto;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 220px;
+    width: 100vw;
+    background: #ffffff;
+  }
+  .header .boxgrey {
+    display: none;
+  }
+  .header .boxwhite {
+    display: none;
+  }
+  .header .language-nav {
+    top: 50px;
+    left: 60px;
+  }
+  .header .contact-information {
+    display: flex;
+    top: 50px;
+    left: 159px;
+    width: 383px;
+    justify-content: space-between;
+  }
+  .header .contact-information li {
+    display: inline-flex;
+    height: 25px;
+  }
+  .header .contact-information li img {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: auto 6px;
+  }
+  .header .contact-information li a {
+    line-height: inherit;
+  }
+  .header .contact-information :nth-child(2) {
+    display: inline-flex;
+  }
+  .header .log-slash-namepage-inter4px {
+    left: 60px;
+    top: 105px;
+  }
+  .header .log-slash-namepage-inter4px .NamePage-height44-fs36-lh44-MaRe {
+    width: 159px;
+    height: 44px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .header .lebel-hamburger {
+    display: none;
+  }
+  .header .hamburgermenu {
+    top: 195px;
+    left: 60px;
+    display: inline;
+    height: 45px;
+  }
+  .header .hamburgermenu label {
+    display: none;
+  }
+  .header .hamburgermenu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .header .hamburgermenu ul li a {
+    margin-right: 15px;
+    font-weight: 700;
+  }
+  .header .hamburgermenu ul li a:hover {
+    border-bottom: 2px solid;
+    color: #24a3ff;
+  }
+  .header .hamburgermenu ul li .active-page {
+    color: #f0145a;
+    border-bottom: 2px solid;
+  }
+
+  .boxheader {
+    height: 220px;
+  }
 }

@@ -1,4 +1,4 @@
-@import "_colors.scss";
+@import "_settings.scss";
 @import "_fonts.scss";
 
 div {
@@ -69,8 +69,7 @@ a {
 
 ;
 
-li,
-::marker {
+li {
     font-size: 18px;
     line-height: 144%;
     // or 26px

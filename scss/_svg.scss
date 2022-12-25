@@ -1,4 +1,4 @@
-@import "_colors.scss";
+@import "_settings.scss";
 
 // mixin
 
@@ -123,8 +123,14 @@
 
 ;
 
-.svg-1162x26bgnone-1162x26-AcRe {
+.svg-1162x26bgnone-1162x26-AcRe-media21x47 {
     @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(11.62px, 26px, none, 11.62px, 26px, $accent-regular);
+
+    @media (min-width: $tabletSD) {
+        @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(21px, 47px, none, 21px, 47px, $accent-regular);
+    }
+
+    ;
 }
 
 ;
@@ -146,6 +152,7 @@
 }
 
 ;
+
 .svg-38x38bgnone-38x38-ActRe-hover-AccRe {
     @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(38px, 38px, none, 38px, 38px, $active-regular);
 
@@ -170,6 +177,17 @@
 
 ;
 
+.svg-24x24bgnone-24x24-GrTx {
+    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(24px, 24px, none, 24px, 24px, $grey-text);
+}
+
+;
+.svg-24x25bgnone-24x24-GrTx {
+    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(24px, 25px, none, 24px, 24px, $grey-text);
+}
+
+;
+
 // logo-slach-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild
 
 .log-10x10bgnone-AcRe-MaRe {
@@ -190,8 +208,14 @@
 
 ;
 
-.log-6933x32bgnone-AcRe-MaRe {
+.log-6933x32bgnone-AcRe-MaRe-media130x60 {
     @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(69.33px, 32px, none, $accent-regular, $main-regular);
+
+    @media (min-width: $tabletSD) {
+        @include logo-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild(130px, 60px, none, $accent-regular, $main-regular);
+    }
+
+    ;
 }
 
 ;

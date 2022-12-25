@@ -1,0 +1,334 @@
+@import "_settings.scss";
+
+.NamePage-height44-fs36-lh44-MaRe {
+    height: 44px;
+    font-size: 36px;
+    line-height: 44px;
+    color: $main-regular;
+    display: inline-flex;
+    position: relative;
+    margin-block: 0px;
+}
+
+;
+
+.header {
+    position: fixed;
+    min-width: 250px;
+    z-index: 20;
+    background: $basic-color-white;
+    min-height: 102px;
+
+    .boxgrey {
+        z-index: -1;
+        display: flex;
+        height: 0px;
+        width: 100vw;
+        height: 45px;
+        background: $grey-bg;
+    }
+
+    ;
+    .language-nav {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+
+        ul {
+            list-style-type: none;
+            display: inline-flex;
+
+            li {
+                font-size: unset;
+                line-height: unset;
+
+                a {
+                    display: inline-flex;
+                    font-weight: 700;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    color: $grey-text;
+                    height: 25px;
+                    width: 33px;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                ;
+
+
+            }
+
+            ;
+
+
+
+            .active-language {
+
+
+                a {
+                    background: $accent-regular;
+                    border-radius: 8px;
+                    color: $basic-color-white;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+    }
+
+    ;
+
+    .contact-information {
+        position: absolute;
+        right: 15px;
+        top: 12.5px;
+        list-style-type: none;
+
+        li {
+            display: none;
+            img{
+                
+            display: none;
+            };
+
+            a {
+                color: $grey-text;
+            }
+
+            ;
+        }
+
+        ;
+
+        :nth-child(2) {
+            display: block;
+
+            a {
+                font-weight: 700;
+
+            }
+
+            ;
+
+        }
+
+    }
+
+    ;
+
+    .log-slash-namepage-inter4px {
+        position: absolute;
+        left: 15px;
+        top: 45px+12.5px;
+
+        .NamePage-height44-fs36-lh44-MaRe {
+            height: 24px;
+            font-size: 20px;
+            line-height: 24px;
+            color: $main-regular;
+            display: inline-flex;
+            position: relative;
+            margin-block: 0px;
+        }
+    }
+
+    ;
+
+    .hamburgersvg {
+        position: absolute;
+        float: right;
+        top: 45px+12.5px;
+        right: 15px;
+    }
+
+    ;
+
+    input,
+    .hamburgermenu {
+        display: none;
+        position: absolute;
+        top: 0;
+    }
+
+    ;
+
+    input:checked~.hamburgermenu {
+        min-height: 162px;
+        display: flex;
+        background: $main-regular;
+        height: 100vh;
+        width: 100vw;
+        z-index: 5;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 12px;
+            gap: 20px;
+            position: fixed;
+            width: calc(100vw - 16px - 24px);
+            right: 8px;
+            bottom: 0px;
+            background: $basic-color-white;
+            border-radius: 12px 12px 0px 0px;
+
+            label {
+                width: 32px;
+                height: 32px;
+
+            }
+
+            ;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                align-self: center;
+                justify-content: space-between;
+
+                li {
+
+
+                    a {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: calc(100vw + 335px - 375px);
+                        height: 6.4467766vh;
+                        padding: 7px 0px;
+                        background: $grey-bg;
+                        border-radius: 12px;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                        min-height: 20px;
+                        max-height: 43px;
+
+                        &:hover {
+                            background: $grey-separator;
+                            color: $active-regular;
+                        }
+
+                        ;
+                    }
+
+                    ;
+
+                    .active-page {
+                        color: $accent-regular;
+                    }
+
+                    ;
+
+
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
+}
+
+;
+
+
+.boxheader {
+    content: "";
+    height: 57px+45px;
+}
+
+;
+
+.footer {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    background: $grey-bg;
+
+    ul {
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px auto 0;
+
+        li {
+            a {
+                font-weight: 700;
+
+            }
+
+            ;
+        }
+
+        ;
+
+
+    }
+
+    ;
+
+    .footer-adress-OnMap {
+        li {
+            a {
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 15px;
+                text-transform: uppercase;
+
+            }
+
+            ;
+        }
+
+        ;
+
+
+    }
+
+    ;
+
+    .footer-contact-information {
+        :nth-child(2) {
+            a {
+                color: $main-alt;
+
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
+
+    .llc {
+        color: $grey-text;
+        line-height: 20px;
+        margin: 30px auto;
+    }
+
+    ;
+}
+
+;

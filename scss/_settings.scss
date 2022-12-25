@@ -1,3 +1,5 @@
+// colors
+
 $basic-color-black: #000000;
 $basic-color-white: #ffffff;
 $basic-color-negative: #EC6F5D;
@@ -17,3 +19,11 @@ $gradient-soft: linear-gradient(42.01deg, $main-regular 14.33%, $main-regular 51
 $gradient-red: linear-gradient(323.35deg, $accent-regular 6.7%, #693264 70.36%);
 $gradient-supersoft: linear-gradient(228.57deg, $main-regular 11.93%, $main-regular 57.17%, #643e72 87.46%);
 $gradient-redtext: linear-gradient(90.13deg, $accent-regular 0.84%, #ef8080 99.96%);
+
+// media rules
+
+$mobile: 375px;
+$tabletSD: 768px;
+$tabletHD: 1024px;
+$desktopSD: 1440px;
+$desktopHD: 1920px;

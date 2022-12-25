@@ -1,199 +1,116 @@
 @import "_media.scss";
 
-.NamePage-height44-fs36-lh44-MaRe {
-    height: 44px;
-    font-size: 36px;
-    line-height: 44px;
-    color: $main-regular;
-    display: inline-flex;
-    position: relative;
-    margin-block: 0px;
-}
-
-;
-
-.header {
-    position: fixed;
-    min-width: 250px;
-    z-index: 20;
-
-    .boxgrey {
-        z-index: -1;
-        display: flex;
-        height: 0px;
+@media (min-width: $tabletSD) {
+    .header {
+        height: 220px;
         width: 100vw;
-        height: 45px;
-        background: $grey-bg;
-    }
-
-    ;
-
-    .boxwhite {
-        z-index: -1;
-        display: flex;
-        height: 0px;
-        width: 100vw;
-        height: 57px;
         background: $basic-color-white;
-    }
 
-    ;
-
-    .language-page {
-        position: absolute;
-        left: 15px;
-        top: 10px;
-
-        :nth-child(1n) {
-            width: 19px;
-            height: 15px;
-            padding: 5px 7px;
-            font-weight: 700;
-            font-size: 12px;
-            letter-spacing: 1px;
-            color: $grey-text;
+        .boxgrey {
+            display: none
         }
 
         ;
 
-        .active-language {
-            color: $basic-color-white;
-            width: 33px;
-            height: 25px;
-            background: $accent-regular;
-            border-radius: 8px;
-        }
-
-        ;
-    }
-
-    ;
-
-    .contact-information {
-        list-style-type: disc;
-        float: right;
-        position: absolute;
-        right: 15px;
-        top: 12.5px;
-
-        :nth-child(odd) {
-            display: none;
-            color: #B3B3BA;
+        .boxwhite {
+            display: none
         }
 
         ;
 
-        :nth-child(2n) {
-            display: inline-block;
-            line-height: 20px;
+        .language-nav {
+            top: 50px;
+            left: 60px;
+        }
 
-            :first-child {
-                display: inline-block;
-                font-weight: 700;
+        ;
+
+        .contact-information {
+            display: flex;
+            top: 50px;
+            left: 177px-18px;
+            width: 482px-99px;
+            justify-content: space-between;
+
+
+
+            li {
+                display: inline-flex;
+                height: 25px;
+
+                img {
+                    display: block;
+                    width: 6px;
+                    height: 6px;
+                    margin: auto 6px;
+                }
+
+                ;
+
+                a {
+                    line-height: inherit;
+                }
+
+                ;
+
+            }
+
+            ;
+
+            :nth-child(2) {
+
+                display: inline-flex;
             }
 
             ;
         }
 
         ;
-    }
 
-    ;
+        .log-slash-namepage-inter4px {
+            left: 60px;
+            top: 105px;
 
-    .log-slash-namepage-inter4px {
-        position: absolute;
-        left: 15px;
-        top: 45px+12.5px;
+            .NamePage-height44-fs36-lh44-MaRe {
+                width: 159px;
+                height: 44px;
+                font-size: 36px;
+                line-height: 44px;
+            }
 
-        .NamePage-height44-fs36-lh44-MaRe {
-            height: 24px;
-            font-size: 20px;
-            line-height: 24px;
-            color: $main-regular;
-            display: inline-flex;
-            position: relative;
-            margin-block: 0px;
+            ;
         }
-    }
 
-    ;
+        ;
 
-    .hamburgersvg {
-        position: absolute;
-        float: right;
-        top: 45px+12.5px;
-        right: 15px;
-    }
+        .lebel-hamburger {
+            display: none;
+        }
 
-    ;
+        ;
 
-    input,
-    .hamburgermenu {
-        display: none;
-        position: absolute;
-        top: 0;
-    }
-
-    ;
-
-    input:checked~.hamburgermenu {
-        min-height: 162px;
-        display: flex;
-        background: $main-regular;
-        height: 100vh;
-        width: 100vw;
-        z-index: 5;
-
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            padding: 12px;
-            gap: 20px;
-            position: absolute;
-            width: calc(100vw - 16px - 24px);
-            right: 8px;
-            bottom: 0px;
-            background: $basic-color-white;
-            border-radius: 12px 12px 0px 0px;
+        .hamburgermenu {
+            top: 195px;
+            left: 60px;
+            display: inline;
+            height: 45px;
 
             label {
-                width: 32px;
-                height: 32px;
-
+                display: none;
             }
 
-            ;
-
             ul {
-                list-style: none;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
-                gap: 15px;
-                align-self: center;
-                justify-content: space-between;
+                list-style: none;
 
                 li {
-
-
                     a {
-                        display: inline-flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: calc(100vw + 335px - 375px);
-                        height: 6.4467766vh;
-                        padding: 7px 0px;
-                        background: $grey-bg;
-                        border-radius: 12px;
+                        margin-right: 15px;
                         font-weight: 700;
-                        font-size: 24px;
-                        line-height: 29px;
-                        min-height: 20px;
-                        max-height: 43px;
 
                         &:hover {
-                            background: $grey-separator;
+                            border-bottom: 2px solid;
                             color: $active-regular;
                         }
 
@@ -202,13 +119,14 @@
 
                     ;
 
+
+
                     .active-page {
                         color: $accent-regular;
+                        border-bottom: 2px solid;
                     }
 
                     ;
-
-
                 }
 
                 ;
@@ -221,88 +139,9 @@
     }
 
     ;
-}
 
-;
-
-
-.boxheader {
-    content: "";
-    height: 57px+45px;
-}
-
-;
-
-.footer {
-    display: flex;
-    position: relative;
-    width: 100vw;
-    bottom: 0;
-    flex-direction: column;
-    align-items: center;
-    background: $grey-bg;
-
-    ul {
-        list-style: none;
-        display: inline-flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 30px auto 0;
-
-        li {
-            a {
-                font-weight: 700;
-
-            }
-
-            ;
-        }
-
-        ;
-
-
-    }
-
-    ;
-
-    .footer-adress-OnMap {
-        li {
-            a {
-                font-size: 12px;
-                letter-spacing: 1px;
-                line-height: 15px;
-                text-transform: uppercase;
-                
-            }
-
-            ;
-        }
-
-        ;
-
-       
-    }
-
-    ;
-    .footer-contact-information {
-        :nth-child(2) {
-            a {
-                color: $main-alt;
-                
-            }
-
-            ;
-        }
-
-        ;
-    }
-
-    ;
-
-    .llc {
-        color: $grey-text;
-        line-height: 20px;
-        margin: 30px auto;
+    .boxheader {
+        height: 220px;
     }
 
     ;
