@@ -130,6 +130,31 @@ a:hover {
   border: 0px;
 }
 
+.svg-32x32bgnone-32x32-AcRe {
+  width: 32px;
+  height: 32px;
+  background: none;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 11.62px;
+  min-height: 24px;
+}
+.svg-32x32bgnone-32x32-AcRe svg {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  position: relative;
+  min-width: 11.62px;
+  min-height: 18px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.svg-32x32bgnone-32x32-AcRe svg path {
+  fill: #f0145a;
+}
+
 .svg-21x47bgnone-21x47-AcRe {
   width: 21px;
   height: 47px;
@@ -780,7 +805,7 @@ a:hover {
 
 .boxheader {
   content: "";
-  height: 102px;
+  height: 132px;
 }
 
 .footer {
@@ -1016,4 +1041,81 @@ a:hover {
   .footer .llc {
     right: 160px;
   }
+}
+.content {
+  margin: auto 30px;
+}
+.content .Fs36 {
+  font-size: 36px;
+}
+.content .Fs30 {
+  font-size: 30px;
+}
+.content .Fs19 {
+  font-size: 19px;
+}
+.content .Lh20 {
+  line-height: 20px;
+}
+.content .Lh37 {
+  line-height: 37px;
+}
+.content .Lh44 {
+  line-height: 44px;
+}
+.content .Lh158 {
+  line-height: 158%;
+}
+.content .MarTop28 {
+  margin-top: 28px;
+}
+.content .MarTop30 {
+  margin-top: 30px;
+}
+.content .MarTop40 {
+  margin-top: 40px;
+}
+.content .MarTop60 {
+  margin-top: 60px;
+}
+.content .MarLeft34 {
+  margin-left: 34px;
+}
+.content .Pica {
+  margin: 60px -30px -3px;
+  width: 100vw;
+  min-height: 243px;
+  background-color: #f5f5fa;
+}
+.content .BorLeft4-GrSe {
+  border-left: 4px solid #e6e6f0;
+}
+.content .DisInl {
+  display: inline;
+}
+.content .flex-center {
+  display: flex;
+  align-items: center;
+}
+.content .Col-MaRe {
+  color: #323264;
+}
+.content .TeamText {
+  display: flex;
+  position: relative;
+  margin: 30px -30px 0;
+  width: 100vw;
+  min-height: 114.06px;
+  background: no-repeat center/contain url(../images/photo/Team.svg);
+  align-items: center;
+}
+.content .TeamText h2 {
+  position: absolute;
+  left: calc(50% - 148px/2);
+  font-size: 36px;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.8;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
 }

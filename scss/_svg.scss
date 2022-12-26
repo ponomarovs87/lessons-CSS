@@ -33,6 +33,36 @@
 
 ;
 
+@mixin svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor-strokenone($DivWidth, $DivHeight, $DivBg, $SvgWidth, $SvgHeight, $PathColor) {
+    width: $DivWidth;
+    height: $DivHeight;
+    background: $DivBg;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-width: 11.62px;
+    min-height: 24px;
+
+
+    svg {
+        width: $SvgWidth;
+        height: $SvgHeight;
+        display: inline-flex;
+        position: relative;
+        min-width: 11.62px;
+        min-height: 18px;
+        max-width: 100%;
+        max-height: 100%;
+
+        path {
+            fill: $PathColor;
+        }
+    }
+}
+
+;
+
 @mixin logo-slach-DivWidthDivHeightDivBg-PathColorFerstChild-PathcolorEndChild($DivWidth, $DivHeight, $DivBg, $PathColorFerstChild, $Pathcolor) {
     width: $DivWidth;
     height: $DivHeight;
@@ -114,6 +144,13 @@
 }
 
 ;
+//svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor-strokenone
+
+.svg-32x32bgnone-32x32-AcRe {
+    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor-strokenone(32px, 32px, none, 32px, 32px, $accent-regular);
+}
+
+;
 
 // svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor
 
@@ -182,6 +219,7 @@
 }
 
 ;
+
 .svg-24x25bgnone-24x24-GrTx {
     @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(24px, 25px, none, 24px, 24px, $grey-text);
 }
