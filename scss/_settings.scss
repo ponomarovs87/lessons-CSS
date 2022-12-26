@@ -27,3 +27,119 @@ $tabletSD: 768px;
 $tabletHD: 1024px;
 $desktopSD: 1440px;
 $desktopHD: 1920px;
+
+//  Front-size
+
+.Fs36 {
+    font-size: 36px;
+}
+
+;
+
+.Fs30 {
+    font-size: 30px;
+
+}
+
+;
+
+.Fs19 {
+    font-size: 19px;
+}
+
+;
+
+// Line-height
+
+.Lh20 {
+    line-height: 20px;
+}
+
+;
+
+.Lh37 {
+    line-height: 37px;
+}
+
+;
+
+.Lh44 {
+    line-height: 44px;
+}
+
+;
+
+.Lh158 {
+    line-height: 158%;
+}
+
+;
+
+// Margin
+
+.MarTop28 {
+    margin-top: 28px;
+}
+
+;
+
+.MarTop30 {
+    margin-top: 30px;
+}
+
+;
+
+.MarTop40 {
+    margin-top: 40px;
+}
+
+;
+
+.MarTop60 {
+    margin-top: 60px;
+}
+
+;
+
+.MarLeft34 {
+    margin-left: 34px;
+}
+
+;
+
+.Marright8 {
+    margin-right: 8px;
+}
+
+;
+
+// border
+
+.BorLeft4-GrSe {
+    border-left: 4px solid $grey-separator;
+}
+
+;
+
+// Display 
+
+.DisInl {
+    display: inline;
+}
+
+;
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+;
+
+// Color
+
+.Col-MaRe {
+    color: $main-regular;
+}
+
+;

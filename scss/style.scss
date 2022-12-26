@@ -1,110 +1,11 @@
 @import "_media.scss";
 
 .content {
-    margin: auto 30px;
+    position: relative;
+    margin: 132px 30px 0;
 
-    .Fs36 {
-        font-size: 36px;
-    }
-
-    ;
-
-    .Fs30 {
-        font-size: 30px;
-
-    }
-
-    ;
-
-    .Fs19 {
-        font-size: 19px;
-    }
-
-    ;
-
-    .Lh20 {
-        line-height: 20px;
-    }
-
-    ;
-
-    .Lh37 {
-        line-height: 37px;
-    }
-
-    ;
-
-    .Lh44 {
-        line-height: 44px;
-    }
-
-    ;
-
-    .Lh158 {
-        line-height: 158%;
-    }
-
-    ;
-
-    .MarTop28 {
-        margin-top: 28px;
-    }
-
-    ;
-
-    .MarTop30 {
-        margin-top: 30px;
-    }
-
-    ;
-
-    .MarTop40 {
-        margin-top: 40px;
-    }
-
-    ;
-
-    .MarTop60 {
-        margin-top: 60px;
-    }
-
-    ;
-
-    .MarLeft34 {
-        margin-left: 34px;
-    }
-
-    ;
-
-    .Marright8 {
-        margin-right: 8px;
-    }
-
-    ;
-
-
-
-    .BorLeft4-GrSe {
-        border-left: 4px solid $grey-separator;
-    }
-
-    ;
-
-    .DisInl {
-        display: inline;
-    }
-
-    ;
-
-    .flex-center {
-        display: flex;
-        align-items: center;
-    }
-
-    ;
-
-    .Col-MaRe {
-        color: $main-regular;
+    .Introduction {
+        min-height: 274px;
     }
 
     ;
@@ -115,13 +16,15 @@
         margin: 30px -30px 0;
         width: 100vw;
         min-height: 114.06px;
-        background: no-repeat center/contain url(../images/photo/Team.svg);
+        background: no-repeat center/cover url(../images/photo/Team.svg);
         align-items: center;
+        justify-content: center;
+        aspect-ratio: 375/114.06;
+
 
 
         h2 {
             position: absolute;
-            left: calc(50% - 148px/2);
             font-size: 36px;
             letter-spacing: 13px;
             text-transform: uppercase;
@@ -190,6 +93,13 @@
     }
 
     ;
+
+}
+
+;
+
+html {
+    overflow-x: hidden;
 
 }
 

@@ -1,3 +1,72 @@
+.Fs36 {
+  font-size: 36px;
+}
+
+.Fs30 {
+  font-size: 30px;
+}
+
+.Fs19 {
+  font-size: 19px;
+}
+
+.Lh20 {
+  line-height: 20px;
+}
+
+.Lh37 {
+  line-height: 37px;
+}
+
+.Lh44 {
+  line-height: 44px;
+}
+
+.Lh158 {
+  line-height: 158%;
+}
+
+.MarTop28 {
+  margin-top: 28px;
+}
+
+.MarTop30 {
+  margin-top: 30px;
+}
+
+.MarTop40 {
+  margin-top: 40px;
+}
+
+.MarTop60 {
+  margin-top: 60px;
+}
+
+.MarLeft34 {
+  margin-left: 34px;
+}
+
+.Marright8 {
+  margin-right: 8px;
+}
+
+.BorLeft4-GrSe {
+  border-left: 4px solid #e6e6f0;
+}
+
+.DisInl {
+  display: inline;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.Col-MaRe {
+  color: #323264;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("woff2-variations");
@@ -128,6 +197,75 @@ a:hover {
   margin: 0px;
   padding: 0px;
   border: 0px;
+}
+
+.Fs36 {
+  font-size: 36px;
+}
+
+.Fs30 {
+  font-size: 30px;
+}
+
+.Fs19 {
+  font-size: 19px;
+}
+
+.Lh20 {
+  line-height: 20px;
+}
+
+.Lh37 {
+  line-height: 37px;
+}
+
+.Lh44 {
+  line-height: 44px;
+}
+
+.Lh158 {
+  line-height: 158%;
+}
+
+.MarTop28 {
+  margin-top: 28px;
+}
+
+.MarTop30 {
+  margin-top: 30px;
+}
+
+.MarTop40 {
+  margin-top: 40px;
+}
+
+.MarTop60 {
+  margin-top: 60px;
+}
+
+.MarLeft34 {
+  margin-left: 34px;
+}
+
+.Marright8 {
+  margin-right: 8px;
+}
+
+.BorLeft4-GrSe {
+  border-left: 4px solid #e6e6f0;
+}
+
+.DisInl {
+  display: inline;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.Col-MaRe {
+  color: #323264;
 }
 
 .svg-32x32bgnone-32x32-AcRe {
@@ -645,6 +783,75 @@ a:hover {
   margin: 0 4px;
 }
 
+.Fs36 {
+  font-size: 36px;
+}
+
+.Fs30 {
+  font-size: 30px;
+}
+
+.Fs19 {
+  font-size: 19px;
+}
+
+.Lh20 {
+  line-height: 20px;
+}
+
+.Lh37 {
+  line-height: 37px;
+}
+
+.Lh44 {
+  line-height: 44px;
+}
+
+.Lh158 {
+  line-height: 158%;
+}
+
+.MarTop28 {
+  margin-top: 28px;
+}
+
+.MarTop30 {
+  margin-top: 30px;
+}
+
+.MarTop40 {
+  margin-top: 40px;
+}
+
+.MarTop60 {
+  margin-top: 60px;
+}
+
+.MarLeft34 {
+  margin-left: 34px;
+}
+
+.Marright8 {
+  margin-right: 8px;
+}
+
+.BorLeft4-GrSe {
+  border-left: 4px solid #e6e6f0;
+}
+
+.DisInl {
+  display: inline;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.Col-MaRe {
+  color: #323264;
+}
+
 .NamePage-height44-fs36-lh44-MaRe {
   height: 44px;
   font-size: 36px;
@@ -803,11 +1010,6 @@ a:hover {
   color: #f0145a;
 }
 
-.boxheader {
-  content: "";
-  height: 132px;
-}
-
 .footer {
   display: flex;
   position: relative;
@@ -853,249 +1055,289 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .header {
+  body .header {
     height: 220px;
     width: 100vw;
     background: #ffffff;
   }
-  .header .boxgrey {
+  body .header .boxgrey {
     display: none;
   }
-  .header .language-nav {
+  body .header .language-nav {
     top: 50px;
     left: 60px;
   }
-  .header .contact-information {
+  body .header .contact-information {
     display: flex;
     top: 50px;
     left: 159px;
     width: 383px;
     justify-content: space-between;
   }
-  .header .contact-information li {
+  body .header .contact-information li {
     display: inline-flex;
     height: 25px;
   }
-  .header .contact-information li img {
+  body .header .contact-information li img {
     display: block;
     width: 6px;
     height: 6px;
     margin: auto 6px;
   }
-  .header .contact-information li a {
+  body .header .contact-information li a {
     line-height: inherit;
   }
-  .header .contact-information :nth-child(2) {
+  body .header .contact-information :nth-child(2) {
     display: inline-flex;
   }
-  .header .log-slash-namepage-inter4px {
+  body .header .log-slash-namepage-inter4px {
     left: 60px;
     top: 105px;
   }
-  .header .log-slash-namepage-inter4px .NamePage-height44-fs36-lh44-MaRe {
+  body .header .log-slash-namepage-inter4px .NamePage-height44-fs36-lh44-MaRe {
     width: 159px;
     height: 44px;
     font-size: 36px;
     line-height: 44px;
   }
-  .header .lebel-hamburger {
+  body .header .lebel-hamburger {
     display: none;
   }
-  .header .hamburgermenu {
+  body .header .hamburgermenu {
     top: 195px;
     left: 60px;
     display: inline;
     height: 45px;
   }
-  .header .hamburgermenu label {
+  body .header .hamburgermenu label {
     display: none;
   }
-  .header .hamburgermenu ul {
+  body .header .hamburgermenu ul {
     display: flex;
     align-items: center;
     list-style: none;
   }
-  .header .hamburgermenu ul li a {
+  body .header .hamburgermenu ul li a {
     margin-right: 15px;
     font-weight: 700;
   }
-  .header .hamburgermenu ul li a:hover {
+  body .header .hamburgermenu ul li a:hover {
     border-bottom: 2px solid;
     color: #24a3ff;
   }
-  .header .hamburgermenu ul li .active-page {
+  body .header .hamburgermenu ul li .active-page {
     color: #f0145a;
     border-bottom: 2px solid;
   }
-
-  .boxheader {
-    height: 220px;
+  body .content {
+    margin: 280px 60px 0;
   }
-
-  .footer .separator {
+  body .content .TeamText {
+    margin: 60px -60px 0;
+  }
+  body .content .TeamText h2 {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+  }
+  body .content .achievements {
+    margin: 60px -60px -3px;
+  }
+  body .footer .separator {
     left: 60px;
     right: 60px;
   }
-  .footer ul {
+  body .footer ul {
     list-style-type: disc;
     display: flex;
     flex-direction: row;
   }
-  .footer ul li::marker {
+  body .footer ul li::marker {
     color: #B3B3BA;
   }
-  .footer ul :first-child {
+  body .footer ul :first-child {
     list-style-type: none;
   }
-  .footer ul :nth-child(n+2) {
+  body .footer ul :nth-child(n+2) {
     margin-left: 26px;
   }
-  .footer .footer-contact-information {
+  body .footer .footer-contact-information {
     margin: 21px auto 0;
   }
 }
 @media (min-width: 1024px) {
-  .header {
+  body .header {
     height: 116px;
   }
-  .header .language-nav {
+  body .header .language-nav {
     right: 442px;
     left: auto;
   }
-  .header .contact-information {
+  body .header .contact-information {
     right: 60px;
     left: auto;
   }
-  .header .log-slash-namepage-inter4px {
+  body .header .log-slash-namepage-inter4px {
     left: 60px;
     top: 50px;
   }
-  .header .hamburgermenu {
+  body .header .hamburgermenu {
     top: 91px;
     left: auto;
     right: 60px;
   }
-  .header .hamburgermenu ul :nth-last-child(1) a {
+  body .header .hamburgermenu ul :nth-last-child(1) a {
     margin-right: 0px;
   }
-  .header .boxheader {
+  body .header .boxheader {
     height: 176px;
   }
-
-  .footer {
+  body .content {
+    margin: 176px 60px 0;
+  }
+  body .content .Introduction {
+    margin-right: calc((478/(1024 - 120)) * 100% - 60px);
+  }
+  body .content .Introduction h1 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  body .content .Advantages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto 0 calc((576/(1024 - 120)) * 100% - 60px);
+    width: 388px;
+    height: 322px;
+  }
+  body .content .TeamText h2 {
+    font-size: 86px;
+    line-height: 105px;
+  }
+  body .content .AboutUsMore {
+    position: relative;
+  }
+  body .content .AboutUsMore p {
+    margin: 60px calc((482/(1024 - 120)) * 100% - 60px) auto auto;
+  }
+  body .content .AboutUsMore h1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 60px 60px auto calc((602/(1024 - 120)) * 100% - 60px);
+    font-size: 38px;
+    line-height: 46px;
+  }
+  body .footer {
     height: 141px;
   }
-  .footer .separator {
+  body .footer .separator {
     position: absolute;
     top: 0;
   }
-  .footer .footer-adress-OnMap {
+  body .footer .footer-adress-OnMap {
     position: absolute;
     left: 60px;
     top: 32px;
     margin: 0;
   }
-  .footer .footer-contact-information {
+  body .footer .footer-contact-information {
     position: absolute;
     left: 60px;
     top: 73px;
     margin: 0;
   }
-  .footer .llc {
+  body .footer .llc {
     position: absolute;
     right: 60px;
     top: 32px;
     margin: 0;
   }
 }
+@media (min-width: 1440px) {
+  body .content {
+    margin: 176px 180px 0;
+  }
+  body .content .Introduction {
+    margin-right: calc((598/(1440 - 360)) * 100% - 180px);
+  }
+  body .content .Advantages {
+    margin: 0 auto 0 calc((872/(1440 - 360)) * 100% - 180px);
+  }
+  body .content .TeamText {
+    margin: 60px -180px 0;
+  }
+  body .content .TeamText h2 {
+    font-size: 96px;
+    line-height: 117px;
+  }
+  body .content .AboutUsMore p {
+    margin: 60px calc((602/(1440 - 360)) * 100% - 180px) auto auto;
+  }
+  body .content .AboutUsMore h1 {
+    margin: 60px auto auto calc((898/(1440 - 360)) * 100% - 180px);
+  }
+  body .content .achievements {
+    margin: 60px -180px -3px;
+  }
+}
 @media (min-width: 1920px) {
-  .header .language-nav {
+  body .header .language-nav {
     right: 542px;
     left: auto;
   }
-  .header .contact-information {
+  body .header .contact-information {
     right: 160px;
     left: auto;
   }
-  .header .log-slash-namepage-inter4px {
+  body .header .log-slash-namepage-inter4px {
     left: 160px;
   }
-  .header .hamburgermenu {
+  body .header .hamburgermenu {
     top: 91px;
     left: auto;
     right: 160px;
   }
-  .header .hamburgermenu ul :nth-last-child(1) a {
+  body .header .hamburgermenu ul :nth-last-child(1) a {
     margin-right: 0px;
   }
-  .header .boxheader {
-    height: 176px;
+  body .content {
+    margin: 176px 280px 0;
   }
-
-  .footer .footer-adress-OnMap {
+  body .content .Introduction {
+    margin-right: calc((698/(1920 - (280 * 2))) * 100% - 180px);
+  }
+  body .content .Advantages {
+    margin: 0 auto 0 calc((1252/(1920 - (280 * 2))) * 100% - 280px);
+  }
+  body .content .TeamText {
+    margin: 60px -280px 0;
+  }
+  body .content .AboutUsMore p {
+    margin: 60px calc((702/(1920 - (280 * 2))) * 100% - 280px) auto auto;
+  }
+  body .content .AboutUsMore h1 {
+    margin: 60px auto auto calc((1278/(1920 - (280 * 2))) * 100% - 280px);
+  }
+  body .content .achievements {
+    margin: 60px -280px -3px;
+  }
+  body .footer .footer-adress-OnMap {
     left: 160px;
   }
-  .footer .footer-contact-information {
+  body .footer .footer-contact-information {
     left: 160px;
   }
-  .footer .llc {
+  body .footer .llc {
     right: 160px;
   }
 }
 .content {
-  margin: auto 30px;
+  position: relative;
+  margin: 132px 30px 0;
 }
-.content .Fs36 {
-  font-size: 36px;
-}
-.content .Fs30 {
-  font-size: 30px;
-}
-.content .Fs19 {
-  font-size: 19px;
-}
-.content .Lh20 {
-  line-height: 20px;
-}
-.content .Lh37 {
-  line-height: 37px;
-}
-.content .Lh44 {
-  line-height: 44px;
-}
-.content .Lh158 {
-  line-height: 158%;
-}
-.content .MarTop28 {
-  margin-top: 28px;
-}
-.content .MarTop30 {
-  margin-top: 30px;
-}
-.content .MarTop40 {
-  margin-top: 40px;
-}
-.content .MarTop60 {
-  margin-top: 60px;
-}
-.content .MarLeft34 {
-  margin-left: 34px;
-}
-.content .Marright8 {
-  margin-right: 8px;
-}
-.content .BorLeft4-GrSe {
-  border-left: 4px solid #e6e6f0;
-}
-.content .DisInl {
-  display: inline;
-}
-.content .flex-center {
-  display: flex;
-  align-items: center;
-}
-.content .Col-MaRe {
-  color: #323264;
+.content .Introduction {
+  min-height: 274px;
 }
 .content .TeamText {
   display: flex;
@@ -1103,12 +1345,13 @@ a:hover {
   margin: 30px -30px 0;
   width: 100vw;
   min-height: 114.06px;
-  background: no-repeat center/contain url(../images/photo/Team.svg);
+  background: no-repeat center/cover url(../images/photo/Team.svg);
   align-items: center;
+  justify-content: center;
+  aspect-ratio: 375/114.06;
 }
 .content .TeamText h2 {
   position: absolute;
-  left: calc(50% - 148px/2);
   font-size: 36px;
   letter-spacing: 13px;
   text-transform: uppercase;
@@ -1147,4 +1390,8 @@ a:hover {
 }
 .content .achievements .Pagination ul :last-child {
   margin-right: 0;
+}
+
+html {
+  overflow-x: hidden;
 }
