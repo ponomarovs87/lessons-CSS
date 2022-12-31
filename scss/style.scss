@@ -49,16 +49,38 @@
         align-items: center;
         justify-content: space-evenly;
 
-        .achievementsimg {
-            background-color: $basic-color-white;
-            height: 90px;
-            width: 255px;
+        .Pagination {
+            ul>li>label>svg>circle:hover {
+                opacity: 0.6;
+            }
 
+            ;
+        }
 
-            div {
+        ;
+
+        div {
+            .achievementsimg {
+                display: none;
+                background-color: $basic-color-white;
                 height: 90px;
                 width: 255px;
-                background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-1.png);
+
+
+                div {
+                    height: 90px;
+                    width: 255px;
+                }
+
+                ;
+
+
+            }
+
+            ;
+
+            :first-child {
+                display: inline-block;
             }
 
             ;
@@ -72,6 +94,17 @@
                 list-style-type: none;
                 display: flex;
                 align-items: center;
+
+                li {
+                    label {
+                        cursor: pointer;
+
+                    }
+
+                    ;
+                }
+
+                ;
 
                 :nth-child(2n) {
                     margin: auto 14px;
@@ -87,6 +120,149 @@
             }
 
             ;
+        }
+
+        ;
+
+        #achievements__tab1:checked~.achievementsimgblock {
+            .img1 {
+                div {
+                    background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-1.png);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+
+        #achievements__tab2:checked~.achievementsimgblock {
+            .img1 {
+                div {
+                    background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-2.png);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        #achievements__tab3:checked~.achievementsimgblock {
+            .img1 {
+                div {
+                    background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-3.png);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        #achievements__tab4:checked~.achievementsimgblock {
+            .img1 {
+                div {
+                    background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-4.png);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        #achievements__tab1:checked~.Pagination {
+            ul>li {
+                .circle__tab1 {
+                    svg>circle {
+                        fill: $active-regular;
+                        opacity: 1;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        #achievements__tab2:checked~.Pagination {
+            ul>li {
+                .circle__tab2 {
+                    svg>circle {
+                        fill: $active-regular;
+                        opacity: 1;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        #achievements__tab3:checked~.Pagination {
+            ul>li {
+                .circle__tab3 {
+                    svg>circle {
+                        fill: $active-regular;
+                        opacity: 1;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        #achievements__tab4:checked~.Pagination {
+            ul>li {
+                .circle__tab4 {
+                    svg>circle {
+                        fill: $active-regular;
+                        opacity: 1;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        input {
+            display: none;
         }
 
         ;

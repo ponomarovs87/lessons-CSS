@@ -1370,26 +1370,66 @@ a:hover {
   align-items: center;
   justify-content: space-evenly;
 }
-.content .achievements .achievementsimg {
+.content .achievements .Pagination ul > li > label > svg > circle:hover {
+  opacity: 0.6;
+}
+.content .achievements div .achievementsimg {
+  display: none;
   background-color: #ffffff;
   height: 90px;
   width: 255px;
 }
-.content .achievements .achievementsimg div {
+.content .achievements div .achievementsimg div {
   height: 90px;
   width: 255px;
-  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-1.png);
+}
+.content .achievements div :first-child {
+  display: inline-block;
 }
 .content .achievements .Pagination ul {
   list-style-type: none;
   display: flex;
   align-items: center;
 }
+.content .achievements .Pagination ul li label {
+  cursor: pointer;
+}
 .content .achievements .Pagination ul :nth-child(2n) {
   margin: auto 14px;
 }
 .content .achievements .Pagination ul :last-child {
   margin-right: 0;
+}
+.content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img1 div {
+  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-1.png);
+}
+.content .achievements #achievements__tab2:checked ~ .achievementsimgblock .img1 div {
+  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-2.png);
+}
+.content .achievements #achievements__tab3:checked ~ .achievementsimgblock .img1 div {
+  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-3.png);
+}
+.content .achievements #achievements__tab4:checked ~ .achievementsimgblock .img1 div {
+  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-4.png);
+}
+.content .achievements #achievements__tab1:checked ~ .Pagination ul > li .circle__tab1 svg > circle {
+  fill: #24a3ff;
+  opacity: 1;
+}
+.content .achievements #achievements__tab2:checked ~ .Pagination ul > li .circle__tab2 svg > circle {
+  fill: #24a3ff;
+  opacity: 1;
+}
+.content .achievements #achievements__tab3:checked ~ .Pagination ul > li .circle__tab3 svg > circle {
+  fill: #24a3ff;
+  opacity: 1;
+}
+.content .achievements #achievements__tab4:checked ~ .Pagination ul > li .circle__tab4 svg > circle {
+  fill: #24a3ff;
+  opacity: 1;
+}
+.content .achievements input {
+  display: none;
 }
 
 html {
