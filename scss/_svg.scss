@@ -28,7 +28,11 @@
             fill: $PathColor;
             stroke: $PathColor;
         }
+
+        ;
     }
+
+    ;
 }
 
 ;
@@ -58,7 +62,11 @@
         path {
             fill: $PathColor;
         }
+
+        ;
     }
+
+    ;
 }
 
 ;
@@ -98,6 +106,8 @@
             display: inline-flex;
         }
 
+        ;
+
         svg {
             path {
                 fill: $Pathcolor;
@@ -106,8 +116,14 @@
             :first-child {
                 fill: $PathColorFerstChild;
             }
+
+            ;
         }
+
+        ;
     }
+
+    ;
 }
 
 ;
@@ -136,10 +152,16 @@
             fill: $Pathcolor;
         }
 
+        ;
+
         :first-child {
             fill: $PathColorFerstChild;
         }
+
+        ;
     }
+
+    ;
 
 }
 
@@ -186,6 +208,8 @@
         @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(32px, 32px, $grey-separator, 32px, 32px, $main-regular);
         border-radius: 8px;
     }
+
+    ;
 }
 
 ;
@@ -196,6 +220,8 @@
     &:hover {
         @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(38px, 38px, none, 38px, 38px, $accent-regular);
     }
+
+    ;
 }
 
 ;
@@ -207,9 +233,13 @@
         @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(55px, 55px, none, 338px, 338px, $main-regular);
     }
 
+    ;
+
     &:active {
         @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(55px, 55px, none, 338px, 338px, $basic-color-black);
     }
+
+    ;
 }
 
 ;
@@ -265,6 +295,8 @@
     :nth-child(2n) {
         margin: 0 4px;
     }
+
+    ;
 }
 
 ;
