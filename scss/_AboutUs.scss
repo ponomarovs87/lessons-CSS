@@ -1,0 +1,662 @@
+.content {
+    position: relative;
+    margin: 132px 30px 0;
+
+    .Introduction {
+        min-height: 274px;
+    }
+
+    ;
+
+    .TeamText {
+        display: flex;
+        position: relative;
+        margin: 30px -30px 0;
+        width: 100vw;
+        min-height: 114.06px;
+        background: no-repeat center/cover url(../images/photo/Team.svg);
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 375/114.06;
+
+
+
+        h2 {
+            position: absolute;
+            font-size: 36px;
+            letter-spacing: 13px;
+            text-transform: uppercase;
+            color: $basic-color-white;
+            opacity: 0.8;
+            text-shadow: 0px 15px 30px rgb(40 40 86 / 80%);
+        }
+
+        ;
+    }
+
+    ;
+
+    .achievements {
+        display: flex;
+        margin: 60px -30px -3px;
+        width: 100vw;
+        min-height: 243px;
+        background-color: $grey-bg;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .achievementsimg {
+                display: none;
+                background-color: $basic-color-white;
+                height: 90px;
+                width: 255px;
+                border-radius: 12px;
+
+                div {
+                    height: 90px;
+                    width: 255px;
+                }
+
+                ;
+
+
+            }
+
+            ;
+
+            :first-child {
+                display: inline-block;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        .Pagination {
+            ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+
+                li {
+                    label {
+                        svg>circle:hover {
+                            opacity: 0.6;
+                        }
+
+                        ;
+                        cursor: pointer;
+
+                    }
+
+                    ;
+                }
+
+                ;
+
+                :nth-child(2n) {
+                    margin: auto 14px;
+                }
+
+                ;
+
+                :last-child {
+                    margin-right: 0;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        #achievements__tab1:checked~.achievementsimgblock {
+            .img1 {
+                div {
+                    background: no-repeat center/53.33px url(../images/Assets/Achievments/Achievment-1.png);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+
+        #achievements__tab2:checked~.achievementsimgblock {
+            .img1 {
+                div {
+                    background: no-repeat center/106px url(../images/Assets/Achievments/Achievment-2.png);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        #achievements__tab3:checked~.achievementsimgblock {
+            .img1 {
+                div {
+                    background: no-repeat center/130px url(../images/Assets/Achievments/Achievment-3.png);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        #achievements__tab4:checked~.achievementsimgblock {
+            .img1 {
+                div {
+                    background: no-repeat center/110.67px url(../images/Assets/Achievments/Achievment-4.png);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        #achievements__tab1:checked~.Pagination {
+            ul>li {
+                .circle__tab1 {
+                    svg>circle {
+                        fill: $active-regular;
+                        opacity: 1;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        #achievements__tab2:checked~.Pagination {
+            ul>li {
+                .circle__tab2 {
+                    svg>circle {
+                        fill: $active-regular;
+                        opacity: 1;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        #achievements__tab3:checked~.Pagination {
+            ul>li {
+                .circle__tab3 {
+                    svg>circle {
+                        fill: $active-regular;
+                        opacity: 1;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        #achievements__tab4:checked~.Pagination {
+            ul>li {
+                .circle__tab4 {
+                    svg>circle {
+                        fill: $active-regular;
+                        opacity: 1;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        input {
+            display: none;
+        }
+
+        ;
+    }
+
+    ;
+
+}
+
+;
+@media (min-width: $tabletSD) {
+    body {
+
+        .content {
+            margin: 280px 60px 0;
+
+            .TeamText {
+                margin: 60px -60px 0;
+
+
+                h2 {
+                    font-size: 46px;
+                    line-height: 56px;
+                    letter-spacing: 63px;
+                }
+
+                ;
+            }
+
+            ;
+
+            .achievements {
+                margin: 60px -60px -3px;
+
+                .achievementsimgblock {
+                    width: calc(100vw - 120px);
+
+                    .achievementsimg {
+                        display: inline-block;
+                        width: 132px;
+
+                        div {
+                            width: 132px;
+                        }
+
+                        ;
+                    }
+
+                    ;
+                }
+
+                ;
+
+                #achievements__tab1:checked~.achievementsimgblock {
+                    .img1 {
+                        div {
+                            background: no-repeat center/53.33px url(../images/Assets/Achievments/Achievment-1.png);
+                        }
+
+                        ;
+                    }
+
+                    ;
+
+                    .img2 {
+                        div {
+                            background: no-repeat center/106px url(../images/Assets/Achievments/Achievment-2.png);
+                        }
+
+                        ;
+                    }
+
+                    ;
+
+                    .img3 {
+                        div {
+                            background: no-repeat center/130px url(../images/Assets/Achievments/Achievment-3.png);
+                        }
+
+                        ;
+                    }
+
+                    ;
+
+                    .img4 {
+                        div {
+                            background: no-repeat center/110.67px url(../images/Assets/Achievments/Achievment-4.png);
+                        }
+
+                        ;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+    }
+
+    ;
+}
+
+;
+
+@media (min-width: $tabletHD) {
+    body {
+
+        .content {
+            margin: 176px 60px 0;
+
+            .Introduction {
+                margin-right: calc((478/(1024 - 120)) * 100% - 60px);
+
+                h1 {
+                    font-size: 38px;
+                    line-height: 46px;
+                }
+
+                ;
+            }
+
+            ;
+
+            .Advantages {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0 auto 0 calc((576/(1024 - 120)) * 100% - 60px);
+                width: 388px;
+                height: 322px;
+
+            }
+
+            ;
+
+            .TeamText {
+                h2 {
+                    font-size: 86px;
+                    line-height: 105px;
+                }
+
+                ;
+            }
+
+            ;
+
+            .AboutUsMore {
+                position: relative;
+
+                p {
+                    margin: 60px calc((482/(1024 - 120)) * 100% - 60px) auto auto;
+                }
+
+                ;
+
+                h1 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    margin: 60px 60px auto calc((602/(1024 - 120)) * 100% - 60px);
+                    font-size: 38px;
+                    line-height: 46px;
+                }
+
+                ;
+            }
+
+            ;
+
+            .achievements {
+
+                .achievementsimgblock {
+                    .achievementsimg {
+                        width: 196px;
+                        height: 110px;
+
+                        div {
+                            width: 196px;
+                            height: 110px;
+                        }
+
+                        ;
+                    }
+
+                    ;
+                }
+
+                ;
+                #achievements__tab1:checked~.achievementsimgblock {
+                    .img1 {
+                        div {
+                            background: no-repeat center/80px url(../images/Assets/Achievments/Achievment-1.png);
+                        }
+
+                        ;
+                    }
+
+                    ;
+
+                    .img2 {
+                        div {
+                            background: no-repeat center/159px url(../images/Assets/Achievments/Achievment-2.png);
+                        }
+
+                        ;
+                    }
+
+                    ;
+
+                    .img3 {
+                        div {
+                            background: no-repeat center/195px url(../images/Assets/Achievments/Achievment-3.png);
+                        }
+
+                        ;
+                    }
+
+                    ;
+
+                    .img4 {
+                        div {
+                            background: no-repeat center/166px url(../images/Assets/Achievments/Achievment-4.png);
+                        }
+
+                        ;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+    }
+
+    ;
+}
+
+;
+
+@media (min-width: $desktopSD) {
+    body {
+        .content {
+            margin: 176px 180px 0;
+
+            .Introduction {
+                margin-right: calc((598/(1440 - 360)) * 100% - 180px);
+            }
+
+            ;
+
+            .Advantages {
+                margin: 0 auto 0 calc((872/(1440 - 360)) * 100% - 180px);
+            }
+
+            ;
+
+            .TeamText {
+                margin: 60px -180px 0;
+
+                h2 {
+                    font-size: 96px;
+                    line-height: 117px;
+                }
+
+                ;
+            }
+
+            ;
+
+            .AboutUsMore {
+                p {
+                    margin: 60px calc((602/(1440 - 360)) * 100% - 180px) auto auto;
+                }
+
+                ;
+
+                h1 {
+                    margin: 60px auto auto calc((898/(1440 - 360)) * 100% - 180px);
+                }
+
+                ;
+            }
+
+            ;
+
+            .achievements {
+                margin: 60px -180px -3px;
+
+                .achievementsimgblock {
+                    .achievementsimg {
+                        width: 300px;
+
+                        div {
+                            width: 300px;
+                        }
+
+                        ;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+        }
+
+        ;
+    }
+
+    ;
+}
+
+;
+
+@media (min-width: $desktopHD) {
+    body {
+
+        .content {
+            margin: 176px 280px 0;
+
+            .Introduction {
+                margin-right: calc((698/(1920 - (280 * 2))) * 100% - 180px);
+            }
+
+            ;
+
+            .Advantages {
+                margin: 0 auto 0 calc((1252/(1920 - (280 * 2))) * 100% - 280px);
+            }
+
+            ;
+
+            .TeamText {
+                margin: 60px -280px 0;
+            }
+
+            ;
+
+            .AboutUsMore {
+                p {
+                    margin: 60px calc((702/(1920 - (280 * 2))) * 100% - 280px) auto auto;
+                }
+
+                ;
+
+                h1 {
+                    margin: 60px auto auto calc((1278/(1920 - (280 * 2))) * 100% - 280px);
+                }
+
+                ;
+            }
+
+            ;
+
+            .achievements {
+                margin: 60px -280px -3px;
+
+                .achievementsimgblock {
+
+                    width: calc(100vw - (160px*2));
+
+                    .achievementsimg {
+                        width: 370px;
+
+                        div {
+                            width: 370px;
+                        }
+
+                        ;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+    }
+
+    ;
+}
+
+;

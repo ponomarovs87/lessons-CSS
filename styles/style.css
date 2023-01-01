@@ -1129,20 +1129,6 @@ a:hover {
     color: #f0145a;
     border-bottom: 2px solid;
   }
-  body .content {
-    margin: 280px 60px 0;
-  }
-  body .content .TeamText {
-    margin: 60px -60px 0;
-  }
-  body .content .TeamText h2 {
-    font-size: 46px;
-    line-height: 56px;
-    letter-spacing: 63px;
-  }
-  body .content .achievements {
-    margin: 60px -60px -3px;
-  }
   body .footer .separator {
     left: 60px;
     right: 60px;
@@ -1192,42 +1178,6 @@ a:hover {
   body .header .boxheader {
     height: 176px;
   }
-  body .content {
-    margin: 176px 60px 0;
-  }
-  body .content .Introduction {
-    margin-right: calc((478/(1024 - 120)) * 100% - 60px);
-  }
-  body .content .Introduction h1 {
-    font-size: 38px;
-    line-height: 46px;
-  }
-  body .content .Advantages {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 auto 0 calc((576/(1024 - 120)) * 100% - 60px);
-    width: 388px;
-    height: 322px;
-  }
-  body .content .TeamText h2 {
-    font-size: 86px;
-    line-height: 105px;
-  }
-  body .content .AboutUsMore {
-    position: relative;
-  }
-  body .content .AboutUsMore p {
-    margin: 60px calc((482/(1024 - 120)) * 100% - 60px) auto auto;
-  }
-  body .content .AboutUsMore h1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin: 60px 60px auto calc((602/(1024 - 120)) * 100% - 60px);
-    font-size: 38px;
-    line-height: 46px;
-  }
   body .footer {
     height: 141px;
   }
@@ -1254,33 +1204,6 @@ a:hover {
     margin: 0;
   }
 }
-@media (min-width: 1440px) {
-  body .content {
-    margin: 176px 180px 0;
-  }
-  body .content .Introduction {
-    margin-right: calc((598/(1440 - 360)) * 100% - 180px);
-  }
-  body .content .Advantages {
-    margin: 0 auto 0 calc((872/(1440 - 360)) * 100% - 180px);
-  }
-  body .content .TeamText {
-    margin: 60px -180px 0;
-  }
-  body .content .TeamText h2 {
-    font-size: 96px;
-    line-height: 117px;
-  }
-  body .content .AboutUsMore p {
-    margin: 60px calc((602/(1440 - 360)) * 100% - 180px) auto auto;
-  }
-  body .content .AboutUsMore h1 {
-    margin: 60px auto auto calc((898/(1440 - 360)) * 100% - 180px);
-  }
-  body .content .achievements {
-    margin: 60px -180px -3px;
-  }
-}
 @media (min-width: 1920px) {
   body .header .language-nav {
     right: 542px;
@@ -1300,27 +1223,6 @@ a:hover {
   }
   body .header .hamburgermenu ul :nth-last-child(1) a {
     margin-right: 0px;
-  }
-  body .content {
-    margin: 176px 280px 0;
-  }
-  body .content .Introduction {
-    margin-right: calc((698/(1920 - (280 * 2))) * 100% - 180px);
-  }
-  body .content .Advantages {
-    margin: 0 auto 0 calc((1252/(1920 - (280 * 2))) * 100% - 280px);
-  }
-  body .content .TeamText {
-    margin: 60px -280px 0;
-  }
-  body .content .AboutUsMore p {
-    margin: 60px calc((702/(1920 - (280 * 2))) * 100% - 280px) auto auto;
-  }
-  body .content .AboutUsMore h1 {
-    margin: 60px auto auto calc((1278/(1920 - (280 * 2))) * 100% - 280px);
-  }
-  body .content .achievements {
-    margin: 60px -280px -3px;
   }
   body .footer .footer-adress-OnMap {
     left: 160px;
@@ -1370,14 +1272,17 @@ a:hover {
   align-items: center;
   justify-content: space-evenly;
 }
-.content .achievements .Pagination ul > li > label > svg > circle:hover {
-  opacity: 0.6;
+.content .achievements div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content .achievements div .achievementsimg {
   display: none;
   background-color: #ffffff;
   height: 90px;
   width: 255px;
+  border-radius: 12px;
 }
 .content .achievements div .achievementsimg div {
   height: 90px;
@@ -1394,6 +1299,9 @@ a:hover {
 .content .achievements .Pagination ul li label {
   cursor: pointer;
 }
+.content .achievements .Pagination ul li label svg > circle:hover {
+  opacity: 0.6;
+}
 .content .achievements .Pagination ul :nth-child(2n) {
   margin: auto 14px;
 }
@@ -1401,16 +1309,16 @@ a:hover {
   margin-right: 0;
 }
 .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img1 div {
-  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-1.png);
+  background: no-repeat center/53.33px url(../images/Assets/Achievments/Achievment-1.png);
 }
 .content .achievements #achievements__tab2:checked ~ .achievementsimgblock .img1 div {
-  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-2.png);
+  background: no-repeat center/106px url(../images/Assets/Achievments/Achievment-2.png);
 }
 .content .achievements #achievements__tab3:checked ~ .achievementsimgblock .img1 div {
-  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-3.png);
+  background: no-repeat center/130px url(../images/Assets/Achievments/Achievment-3.png);
 }
 .content .achievements #achievements__tab4:checked ~ .achievementsimgblock .img1 div {
-  background: no-repeat center/auto url(../images/Assets/Achievments/Achievment-4.png);
+  background: no-repeat center/110.67px url(../images/Assets/Achievments/Achievment-4.png);
 }
 .content .achievements #achievements__tab1:checked ~ .Pagination ul > li .circle__tab1 svg > circle {
   fill: #24a3ff;
@@ -1432,6 +1340,167 @@ a:hover {
   display: none;
 }
 
+@media (min-width: 768px) {
+  body .content {
+    margin: 280px 60px 0;
+  }
+  body .content .TeamText {
+    margin: 60px -60px 0;
+  }
+  body .content .TeamText h2 {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+  }
+  body .content .achievements {
+    margin: 60px -60px -3px;
+  }
+  body .content .achievements .achievementsimgblock {
+    width: calc(100vw - 120px);
+  }
+  body .content .achievements .achievementsimgblock .achievementsimg {
+    display: inline-block;
+    width: 132px;
+  }
+  body .content .achievements .achievementsimgblock .achievementsimg div {
+    width: 132px;
+  }
+  body .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img1 div {
+    background: no-repeat center/53.33px url(../images/Assets/Achievments/Achievment-1.png);
+  }
+  body .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img2 div {
+    background: no-repeat center/106px url(../images/Assets/Achievments/Achievment-2.png);
+  }
+  body .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img3 div {
+    background: no-repeat center/130px url(../images/Assets/Achievments/Achievment-3.png);
+  }
+  body .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img4 div {
+    background: no-repeat center/110.67px url(../images/Assets/Achievments/Achievment-4.png);
+  }
+}
+@media (min-width: 1024px) {
+  body .content {
+    margin: 176px 60px 0;
+  }
+  body .content .Introduction {
+    margin-right: calc((478/(1024 - 120)) * 100% - 60px);
+  }
+  body .content .Introduction h1 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  body .content .Advantages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto 0 calc((576/(1024 - 120)) * 100% - 60px);
+    width: 388px;
+    height: 322px;
+  }
+  body .content .TeamText h2 {
+    font-size: 86px;
+    line-height: 105px;
+  }
+  body .content .AboutUsMore {
+    position: relative;
+  }
+  body .content .AboutUsMore p {
+    margin: 60px calc((482/(1024 - 120)) * 100% - 60px) auto auto;
+  }
+  body .content .AboutUsMore h1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 60px 60px auto calc((602/(1024 - 120)) * 100% - 60px);
+    font-size: 38px;
+    line-height: 46px;
+  }
+  body .content .achievements .achievementsimgblock .achievementsimg {
+    width: 196px;
+    height: 110px;
+  }
+  body .content .achievements .achievementsimgblock .achievementsimg div {
+    width: 196px;
+    height: 110px;
+  }
+  body .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img1 div {
+    background: no-repeat center/80px url(../images/Assets/Achievments/Achievment-1.png);
+  }
+  body .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img2 div {
+    background: no-repeat center/159px url(../images/Assets/Achievments/Achievment-2.png);
+  }
+  body .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img3 div {
+    background: no-repeat center/195px url(../images/Assets/Achievments/Achievment-3.png);
+  }
+  body .content .achievements #achievements__tab1:checked ~ .achievementsimgblock .img4 div {
+    background: no-repeat center/166px url(../images/Assets/Achievments/Achievment-4.png);
+  }
+}
+@media (min-width: 1440px) {
+  body .content {
+    margin: 176px 180px 0;
+  }
+  body .content .Introduction {
+    margin-right: calc((598/(1440 - 360)) * 100% - 180px);
+  }
+  body .content .Advantages {
+    margin: 0 auto 0 calc((872/(1440 - 360)) * 100% - 180px);
+  }
+  body .content .TeamText {
+    margin: 60px -180px 0;
+  }
+  body .content .TeamText h2 {
+    font-size: 96px;
+    line-height: 117px;
+  }
+  body .content .AboutUsMore p {
+    margin: 60px calc((602/(1440 - 360)) * 100% - 180px) auto auto;
+  }
+  body .content .AboutUsMore h1 {
+    margin: 60px auto auto calc((898/(1440 - 360)) * 100% - 180px);
+  }
+  body .content .achievements {
+    margin: 60px -180px -3px;
+  }
+  body .content .achievements .achievementsimgblock .achievementsimg {
+    width: 300px;
+  }
+  body .content .achievements .achievementsimgblock .achievementsimg div {
+    width: 300px;
+  }
+}
+@media (min-width: 1920px) {
+  body .content {
+    margin: 176px 280px 0;
+  }
+  body .content .Introduction {
+    margin-right: calc((698/(1920 - (280 * 2))) * 100% - 180px);
+  }
+  body .content .Advantages {
+    margin: 0 auto 0 calc((1252/(1920 - (280 * 2))) * 100% - 280px);
+  }
+  body .content .TeamText {
+    margin: 60px -280px 0;
+  }
+  body .content .AboutUsMore p {
+    margin: 60px calc((702/(1920 - (280 * 2))) * 100% - 280px) auto auto;
+  }
+  body .content .AboutUsMore h1 {
+    margin: 60px auto auto calc((1278/(1920 - (280 * 2))) * 100% - 280px);
+  }
+  body .content .achievements {
+    margin: 60px -280px -3px;
+  }
+  body .content .achievements .achievementsimgblock {
+    width: calc(100vw - (160px*2));
+  }
+  body .content .achievements .achievementsimgblock .achievementsimg {
+    width: 370px;
+  }
+  body .content .achievements .achievementsimgblock .achievementsimg div {
+    width: 370px;
+  }
+}
 html {
   overflow-x: hidden;
 }
