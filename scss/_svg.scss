@@ -37,6 +37,40 @@
 
 ;
 
+@mixin svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-strokeColor($DivWidth, $DivHeight, $DivBg, $SvgWidth, $SvgHeight, $PathColor) {
+    width: $DivWidth;
+    height: $DivHeight;
+    background: $DivBg;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-width: 11.62px;
+    min-height: 24px;
+
+
+    svg {
+        width: $SvgWidth;
+        height: $SvgHeight;
+        display: inline-flex;
+        position: relative;
+        min-width: 11.62px;
+        min-height: 18px;
+        max-width: 100%;
+        max-height: 100%;
+
+        path {
+            stroke: $PathColor;
+        }
+
+        ;
+    }
+
+    ;
+}
+
+;
+
 @mixin svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor-strokenone($DivWidth, $DivHeight, $DivBg, $SvgWidth, $SvgHeight, $PathColor) {
     width: $DivWidth;
     height: $DivHeight;
@@ -207,6 +241,18 @@
     &:active {
         @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-PathColor(32px, 32px, $grey-separator, 32px, 32px, $main-regular);
         border-radius: 8px;
+    }
+
+    ;
+}
+
+;
+
+.svg-32x32GrBg-7x14-AcRe-hover {
+    @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-strokeColor(32px, 32px, $grey-bg, 7px, 14px, $active-regular);
+
+    &:hover {
+        @include svg-DivWidthDivHeightDivBg-SvgWidthSvgHeight-strokeColor(32px, 32px, $grey-bgalt, 7px, 14px, $accent-regular);
     }
 
     ;

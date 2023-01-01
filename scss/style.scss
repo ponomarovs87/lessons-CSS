@@ -1,10 +1,117 @@
 @import "_media.scss";
 
-
-
 html {
     overflow-x: hidden;
 
+}
+
+;
+
+.phototeam1 {
+    background: no-repeat center/100% url(../images/photo/Team_photos/Team-1.png);
+}
+
+;
+
+.phototeam2 {
+    background: no-repeat center/100% url(../images/photo/Team_photos/Team-2.png);
+}
+
+;
+
+.phototeam3 {
+    background: no-repeat center/100% url(../images/photo/Team_photos/Team-3.png);
+}
+
+;
+
+.phototeam4 {
+    background: no-repeat center/100% url(../images/photo/Team_photos/Team-4.png);
+}
+
+;
+
+.phototeam5 {
+    background: no-repeat center/100% url(../images/photo/Team_photos/Team-5.png);
+}
+
+;
+
+.phototeam6 {
+    background: no-repeat center/100% url(../images/photo/Team_photos/Team-6.png);
+}
+
+;
+
+.content {
+    h1 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    ;
+
+    .team {
+        article {
+            margin-top: 30px;
+            position: relative;
+            width: calc(100vw - (30px * 2));
+
+            input {
+                display: none;
+            }
+
+            ;
+
+            .photo {
+
+                width: 100%;
+                height: 300px;
+                border-radius: 12px;
+            }
+
+            ;
+
+            label {
+                h4 {
+                    margin-top: 15px;
+                }
+
+                ;
+
+                h4:hover {
+                    color: $accent-regular;
+                }
+
+                ;
+            }
+
+            ;
+
+            .buttonmore {
+                position: absolute;
+                right: 0px;
+                top: 315px;
+                border-radius: 50%;
+                transform: rotate(-90deg);
+            }
+
+            ;
+
+            .intertext {
+                display: none;
+            }
+
+            ;
+        }
+
+        ;
+        &:last-child{
+            margin-bottom: 60px;
+        };
+    }
+
+    ;
 }
 
 ;
