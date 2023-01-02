@@ -1578,6 +1578,36 @@ html {
   background: no-repeat center/100% url(../images/photo/Team_photos/Team-6.png);
 }
 
+.intertext {
+  display: none;
+  background: none;
+}
+
+.titlejob {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+
+.titlename {
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content .team article input:checked ~ .intertext {
+  display: inline;
+}
+.content .team article input:checked ~ label > .buttonmore {
+  transform: rotate(90deg);
+}
+.content .team article input:checked ~ label > .buttonmore svg path {
+  stroke: #f0145a;
+}
+
 .content h1 {
   font-size: 30px;
   line-height: 37px;
@@ -1607,9 +1637,22 @@ html {
   top: 315px;
   border-radius: 50%;
   transform: rotate(-90deg);
+  transition: transform 0.2s;
 }
-.content .team article .intertext {
-  display: none;
+.content .team article .intertext a {
+  display: block;
+  margin-top: 10px;
+}
+.content .team article .intertext .bio {
+  border-top: 4px solid #e6e6f0;
+  margin-top: 30px;
+}
+.content .team article .intertext .bio p,
+.content .team article .intertext .bio h3 {
+  margin-top: 30px;
+}
+.content .team article .intertext .bio h3 + p {
+  margin-top: 15px;
 }
 .content .team:last-child {
   margin-bottom: 60px;
