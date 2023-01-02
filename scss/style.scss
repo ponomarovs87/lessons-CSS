@@ -64,6 +64,7 @@ html {
     line-height: 46px;
     background: $gradient-redtext;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
