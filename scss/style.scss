@@ -68,43 +68,39 @@ html {
 
 .content {
     .team {
-        article {
-            input:checked {
-                &~.intertext {
-                    display: inline;
-                }
+        input:checked+article {
+            .intertext {
+                display: inline;
+            }
 
-                ;
+            ;
 
-                &~.titlejob {
-                    display: inline-block;
-                }
+            .titlejob {
+                display: inline-block;
+            }
 
-                ;
+            ;
 
-                &~label>.titlename {
-                    font-size: 38px;
-                    line-height: 46px;
-                    background: $gradient-redtext;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+            label>.titlename {
+                font-size: 38px;
+                line-height: 46px;
+                background: $gradient-redtext;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
 
-                ;
+            ;
 
-                &~label>.buttonmore {
-                    transform: rotate(90deg);
-                    position: relative;
-                    top: unset;
-                    float: right;
+            label>.buttonmore {
+                transform: rotate(90deg);
+                position: relative;
+                top: unset;
+                float: right;
 
-                    svg {
-                        path {
-                            stroke: $accent-regular;
-                        }
-
-                        ;
+                svg {
+                    path {
+                        stroke: $accent-regular;
                     }
 
                     ;
@@ -133,16 +129,17 @@ html {
     ;
 
     .team {
+
+        input {
+            display: none;
+        }
+
+        ;
+
         article {
             margin-top: 30px;
             position: relative;
             width: calc(100vw - (30px * 2));
-
-            input {
-                display: none;
-            }
-
-            ;
 
             .photo {
 
@@ -265,45 +262,39 @@ html {
 
     .content {
         .team {
-            article {
-                input:checked {
-                    
+            input:checked+article {
+                .intertext {
+                    display: inline;
+                }
 
-                    &~.intertext {
-                        display: inline;
-                    }
+                ;
 
-                    ;
+                .titlejob {
+                    display: inline-block;
+                }
 
-                    &~.titlejob {
-                        display: inline-block;
-                    }
+                ;
 
-                    ;
+                label>.titlename {
+                    font-size: 38px;
+                    line-height: 46px;
+                    background: $gradient-redtext;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
 
-                    &~label>.titlename {
-                        font-size: 38px;
-                        line-height: 46px;
-                        background: $gradient-redtext;
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
+                ;
 
-                    ;
+                label>.buttonmore {
+                    transform: rotate(90deg);
+                    position: relative;
+                    top: unset;
+                    float: right;
 
-                    &~label>.buttonmore {
-                        transform: rotate(90deg);
-                        position: relative;
-                        top: unset;
-                        float: right;
-
-                        svg {
-                            path {
-                                stroke: $accent-regular;
-                            }
-
-                            ;
+                    svg {
+                        path {
+                            stroke: $accent-regular;
                         }
 
                         ;
@@ -313,6 +304,7 @@ html {
                 }
 
                 ;
+
             }
 
             ;
