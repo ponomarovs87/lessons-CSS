@@ -8,37 +8,37 @@ html {
 ;
 
 .phototeam1 {
-    background: no-repeat center/100% url(../images/photo/Team_photos/Team-1.png);
+    background: no-repeat center/cover url(../images/photo/Team_photos/Team-1.png);
 }
 
 ;
 
 .phototeam2 {
-    background: no-repeat center/100% url(../images/photo/Team_photos/Team-2.png);
+    background: no-repeat center/cover url(../images/photo/Team_photos/Team-2.png);
 }
 
 ;
 
 .phototeam3 {
-    background: no-repeat center/100% url(../images/photo/Team_photos/Team-3.png);
+    background: no-repeat center/cover url(../images/photo/Team_photos/Team-3.png);
 }
 
 ;
 
 .phototeam4 {
-    background: no-repeat center/100% url(../images/photo/Team_photos/Team-4.png);
+    background: no-repeat center/cover url(../images/photo/Team_photos/Team-4.png);
 }
 
 ;
 
 .phototeam5 {
-    background: no-repeat center/100% url(../images/photo/Team_photos/Team-5.png);
+    background: no-repeat center/cover url(../images/photo/Team_photos/Team-5.png);
 }
 
 ;
 
 .phototeam6 {
-    background: no-repeat center/100% url(../images/photo/Team_photos/Team-6.png);
+    background: no-repeat center/cover url(../images/photo/Team_photos/Team-6.png);
 }
 
 ;
@@ -55,17 +55,13 @@ html {
     font-size: 14px;
     line-height: 22px;
     color: $grey-text;
-}
+    display: contents;
 
-;
+    &~.intertext {
+        display: none;
+    }
 
-.titlename {
-    font-size: 38px;
-    line-height: 46px;
-    background: $gradient-redtext;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    ;
 }
 
 ;
@@ -80,8 +76,28 @@ html {
 
                 ;
 
+                &~.titlejob {
+                    display: inline-block;
+                }
+
+                ;
+
+                &~label>.titlename {
+                    font-size: 38px;
+                    line-height: 46px;
+                    background: $gradient-redtext;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                ;
+
                 &~label>.buttonmore {
                     transform: rotate(90deg);
+                    position: relative;
+                    top: unset;
+                    float: right;
 
                     svg {
                         path {
@@ -210,5 +226,115 @@ html {
 
     ;
 }
+
+;
+
+@media (min-width: $tabletSD) {
+    .content {
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            article {
+                width: calc(50vw - (60px / 2) - (60px * 2 / 2));
+                display: inline-block;
+
+                .photo {
+                    height: 400px;
+                    position: relative;
+                }
+
+                ;
+
+                label>.buttonmore {
+                    top: 415px;
+                    transform: rotate(00deg);
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
+
+    .content {
+        .team {
+            article {
+                input:checked {
+                    
+
+                    &~.intertext {
+                        display: inline;
+                    }
+
+                    ;
+
+                    &~.titlejob {
+                        display: inline-block;
+                    }
+
+                    ;
+
+                    &~label>.titlename {
+                        font-size: 38px;
+                        line-height: 46px;
+                        background: $gradient-redtext;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    ;
+
+                    &~label>.buttonmore {
+                        transform: rotate(90deg);
+                        position: relative;
+                        top: unset;
+                        float: right;
+
+                        svg {
+                            path {
+                                stroke: $accent-regular;
+                            }
+
+                            ;
+                        }
+
+                        ;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
+
+}
+
+;
+
+@media (min-width: $tabletHD) {}
+
+;
+
+@media (min-width: $desktopSD) {}
+
+;
+
+@media (min-width: $desktopHD) {}
 
 ;
