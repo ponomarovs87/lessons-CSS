@@ -1590,58 +1590,29 @@ html {
   color: #B3B3BA;
   display: contents;
 }
-.titlejob ~ .intertext {
-  display: none;
-}
 
-.content .team input:checked + article .intertext {
-  display: inline;
-}
-.content .team input:checked + article .titlejob {
-  display: inline-block;
-}
-.content .team input:checked + article label > .titlename {
-  font-size: 38px;
-  line-height: 46px;
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.content .team input:checked + article label > .buttonmore {
-  transform: rotate(90deg);
-  position: relative;
-  top: unset;
-  float: right;
-}
-.content .team input:checked + article label > .buttonmore svg path {
-  stroke: #f0145a;
-}
-
-.content h1 {
+h1 {
   font-size: 30px;
   line-height: 37px;
 }
-.content .team input {
-  display: none;
-}
-.content .team article {
+
+.team article {
   margin-top: 30px;
   position: relative;
   width: calc(100vw - (30px * 2));
 }
-.content .team article .photo {
+.team article .photo {
   width: 100%;
   height: 300px;
   border-radius: 12px;
 }
-.content .team article label h4 {
+.team article label h4 {
   margin-top: 15px;
 }
-.content .team article label h4:hover {
+.team article label h4:hover {
   color: #f0145a;
 }
-.content .team article .buttonmore {
+.team article .buttonmore {
   position: absolute;
   right: 0px;
   top: 315px;
@@ -1649,51 +1620,285 @@ html {
   transform: rotate(-90deg);
   transition: transform 0.2s;
 }
-.content .team article .intertext a {
+.team article .intertext a {
   display: block;
   margin-top: 10px;
 }
-.content .team article .intertext .bio {
+.team article .intertext .bio {
   border-top: 4px solid #e6e6f0;
   margin-top: 30px;
 }
-.content .team article .intertext .bio p,
-.content .team article .intertext .bio h3 {
+.team article .intertext .bio p,
+.team article .intertext .bio h3 {
   margin-top: 30px;
 }
-.content .team article .intertext .bio h3 + p {
+.team article .intertext .bio h3 + p {
   margin-top: 15px;
 }
-.content .team:last-child {
+.team:last-child {
   margin-bottom: 60px;
 }
 
+input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+}
+
+.team1:checked ~ * {
+  display: none;
+}
+.team1:checked ~ * > * {
+  display: none;
+}
+
+.team1:checked ~ .team {
+  display: inline-block;
+}
+.team1:checked ~ .team :nth-child(1) {
+  display: block;
+  margin-top: unset;
+}
+.team1:checked ~ .team :nth-child(1) .intertext {
+  display: inline;
+}
+.team1:checked ~ .team :nth-child(1) .titlejob {
+  display: inline-block;
+}
+.team1:checked ~ .team :nth-child(1) label > .titlename {
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team1:checked ~ .team :nth-child(1) label > .buttonmore {
+  transform: rotate(90deg);
+  position: relative;
+  top: unset;
+  float: right;
+}
+.team1:checked ~ .team :nth-child(1) label > .buttonmore svg path {
+  stroke: #f0145a;
+}
+
+.team2:checked ~ * {
+  display: none;
+}
+.team2:checked ~ * > * {
+  display: none;
+}
+
+.team2:checked ~ .team {
+  display: inline-block;
+}
+.team2:checked ~ .team :nth-child(2) {
+  display: block;
+  margin-top: unset;
+}
+.team2:checked ~ .team :nth-child(2) .intertext {
+  display: inline;
+}
+.team2:checked ~ .team :nth-child(2) .titlejob {
+  display: inline-block;
+}
+.team2:checked ~ .team :nth-child(2) label > .titlename {
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team2:checked ~ .team :nth-child(2) label > .buttonmore {
+  transform: rotate(90deg);
+  position: relative;
+  top: unset;
+  float: right;
+}
+.team2:checked ~ .team :nth-child(2) label > .buttonmore svg path {
+  stroke: #f0145a;
+}
+
+.team3:checked ~ * {
+  display: none;
+}
+.team3:checked ~ * > * {
+  display: none;
+}
+
+.team3:checked ~ .team {
+  display: inline-block;
+}
+.team3:checked ~ .team :nth-child(3) {
+  display: block;
+  margin-top: unset;
+}
+.team3:checked ~ .team :nth-child(3) .intertext {
+  display: inline;
+}
+.team3:checked ~ .team :nth-child(3) .titlejob {
+  display: inline-block;
+}
+.team3:checked ~ .team :nth-child(3) label > .titlename {
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team3:checked ~ .team :nth-child(3) label > .buttonmore {
+  transform: rotate(90deg);
+  position: relative;
+  top: unset;
+  float: right;
+}
+.team3:checked ~ .team :nth-child(3) label > .buttonmore svg path {
+  stroke: #f0145a;
+}
+
+.team4:checked ~ * {
+  display: none;
+}
+.team4:checked ~ * > * {
+  display: none;
+}
+
+.team4:checked ~ .team {
+  display: inline-block;
+}
+.team4:checked ~ .team :nth-child(4) {
+  display: block;
+  margin-top: unset;
+}
+.team4:checked ~ .team :nth-child(4) .intertext {
+  display: inline;
+}
+.team4:checked ~ .team :nth-child(4) .titlejob {
+  display: inline-block;
+}
+.team4:checked ~ .team :nth-child(4) label > .titlename {
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team4:checked ~ .team :nth-child(4) label > .buttonmore {
+  transform: rotate(90deg);
+  position: relative;
+  top: unset;
+  float: right;
+}
+.team4:checked ~ .team :nth-child(4) label > .buttonmore svg path {
+  stroke: #f0145a;
+}
+
+.team5:checked ~ * {
+  display: none;
+}
+.team5:checked ~ * > * {
+  display: none;
+}
+
+.team5:checked ~ .team {
+  display: inline-block;
+}
+.team5:checked ~ .team :nth-child(5) {
+  display: block;
+  margin-top: unset;
+}
+.team5:checked ~ .team :nth-child(5) .intertext {
+  display: inline;
+}
+.team5:checked ~ .team :nth-child(5) .titlejob {
+  display: inline-block;
+}
+.team5:checked ~ .team :nth-child(5) label > .titlename {
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team5:checked ~ .team :nth-child(5) label > .buttonmore {
+  transform: rotate(90deg);
+  position: relative;
+  top: unset;
+  float: right;
+}
+.team5:checked ~ .team :nth-child(5) label > .buttonmore svg path {
+  stroke: #f0145a;
+}
+
+.team6:checked ~ * {
+  display: none;
+}
+.team6:checked ~ * > * {
+  display: none;
+}
+
+.team6:checked ~ .team {
+  display: inline-block;
+}
+.team6:checked ~ .team :nth-child(6) {
+  display: block;
+  margin-top: unset;
+}
+.team6:checked ~ .team :nth-child(6) .intertext {
+  display: inline;
+}
+.team6:checked ~ .team :nth-child(6) .titlejob {
+  display: inline-block;
+}
+.team6:checked ~ .team :nth-child(6) label > .titlename {
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team6:checked ~ .team :nth-child(6) label > .buttonmore {
+  transform: rotate(90deg);
+  position: relative;
+  top: unset;
+  float: right;
+}
+.team6:checked ~ .team :nth-child(6) label > .buttonmore svg path {
+  stroke: #f0145a;
+}
+
 @media (min-width: 768px) {
-  .content .team {
+  .team {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .content .team article {
+  .team article {
     width: calc(50vw - (60px / 2) - (60px * 2 / 2));
     display: inline-block;
   }
-  .content .team article .photo {
+  .team article .photo {
     height: 400px;
     position: relative;
   }
-  .content .team article label > .buttonmore {
+  .team article label > .buttonmore {
     top: 415px;
     transform: rotate(0deg);
   }
 
-  .content .team input:checked + article .intertext {
+  input:checked .team article .intertext {
     display: inline;
   }
-  .content .team input:checked + article .titlejob {
+  input:checked .team article .titlejob {
     display: inline-block;
   }
-  .content .team input:checked + article label > .titlename {
+  input:checked .team article label > .titlename {
     font-size: 38px;
     line-height: 46px;
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -1701,13 +1906,13 @@ html {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .content .team input:checked + article label > .buttonmore {
+  input:checked .team article label > .buttonmore {
     transform: rotate(90deg);
     position: relative;
     top: unset;
     float: right;
   }
-  .content .team input:checked + article label > .buttonmore svg path {
+  input:checked .team article label > .buttonmore svg path {
     stroke: #f0145a;
   }
 }

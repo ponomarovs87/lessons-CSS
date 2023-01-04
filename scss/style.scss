@@ -57,8 +57,99 @@ html {
     color: $grey-text;
     display: contents;
 
-    &~.intertext {
-        display: none;
+}
+
+;
+
+h1 {
+    font-size: 30px;
+    line-height: 37px;
+}
+
+;
+
+.team {
+
+    article {
+        margin-top: 30px;
+        position: relative;
+        width: calc(100vw - (30px * 2));
+
+        .photo {
+
+            width: 100%;
+            height: 300px;
+            border-radius: 12px;
+        }
+
+        ;
+
+        label {
+            h4 {
+                margin-top: 15px;
+            }
+
+            ;
+
+            h4:hover {
+                color: $accent-regular;
+            }
+
+            ;
+        }
+
+        ;
+
+        .buttonmore {
+            position: absolute;
+            right: 0px;
+            top: 315px;
+            border-radius: 50%;
+            transform: rotate(-90deg);
+            transition: transform 0.2s;
+        }
+
+        ;
+
+        .intertext {
+            a {
+                display: block;
+                margin-top: 10px;
+            }
+
+            ;
+
+            .bio {
+                border-top: 4px solid $grey-separator;
+                margin-top: 30px;
+
+                p,
+                h3 {
+                    margin-top: 30px;
+                }
+
+                ;
+
+                h3+p {
+                    margin-top: 15px;
+                }
+
+                ;
+
+            }
+
+            ;
+        }
+
+        ;
+
+
+    }
+
+    ;
+
+    &:last-child {
+        margin-bottom: 60px;
     }
 
     ;
@@ -66,9 +157,34 @@ html {
 
 ;
 
-.content {
-    .team {
-        input:checked+article {
+input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+
+;
+
+@for $i from 1 through 6 {
+
+    .team#{$i}:checked~* {
+        display: none;
+
+        &>* {
+            display: none;
+        }
+
+        ;
+    }
+
+    .team#{$i}:checked~.team {
+
+        display: inline-block;
+
+        :nth-child(#{$i}) {
+            display: block;
+            margin-top: unset;
+
             .intertext {
                 display: inline;
             }
@@ -120,114 +236,9 @@ html {
 
 ;
 
-.content {
-    h1 {
-        font-size: 30px;
-        line-height: 37px;
-    }
-
-    ;
-
-    .team {
-
-        input {
-            display: none;
-        }
-
-        ;
-
-        article {
-            margin-top: 30px;
-            position: relative;
-            width: calc(100vw - (30px * 2));
-
-            .photo {
-
-                width: 100%;
-                height: 300px;
-                border-radius: 12px;
-            }
-
-            ;
-
-            label {
-                h4 {
-                    margin-top: 15px;
-                }
-
-                ;
-
-                h4:hover {
-                    color: $accent-regular;
-                }
-
-                ;
-            }
-
-            ;
-
-            .buttonmore {
-                position: absolute;
-                right: 0px;
-                top: 315px;
-                border-radius: 50%;
-                transform: rotate(-90deg);
-                transition: transform 0.2s;
-            }
-
-            ;
-
-            .intertext {
-                a {
-                    display: block;
-                    margin-top: 10px;
-                }
-
-                ;
-
-                .bio {
-                    border-top: 4px solid $grey-separator;
-                    margin-top: 30px;
-
-                    p,
-                    h3 {
-                        margin-top: 30px;
-                    }
-
-                    ;
-
-                    h3+p {
-                        margin-top: 15px;
-                    }
-
-                    ;
-
-                }
-
-                ;
-            }
-
-            ;
-
-
-        }
-
-        ;
-
-        &:last-child {
-            margin-bottom: 60px;
-        }
-
-        ;
-    }
-
-    ;
-}
-
-;
-
 @media (min-width: $tabletSD) {
-    .content {
+
+
         .team {
             display: flex;
             flex-wrap: wrap;
@@ -256,68 +267,65 @@ html {
         }
 
         ;
-    }
 
-    ;
+        input:checked {
+            .team {
+                article {
+                    .intertext {
+                        display: inline;
+                    }
 
-    .content {
-        .team {
-            input:checked+article {
-                .intertext {
-                    display: inline;
-                }
+                    ;
 
-                ;
+                    .titlejob {
+                        display: inline-block;
+                    }
 
-                .titlejob {
-                    display: inline-block;
-                }
+                    ;
 
-                ;
+                    label>.titlename {
+                        font-size: 38px;
+                        line-height: 46px;
+                        background: $gradient-redtext;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
 
-                label>.titlename {
-                    font-size: 38px;
-                    line-height: 46px;
-                    background: $gradient-redtext;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+                    ;
 
-                ;
+                    label>.buttonmore {
+                        transform: rotate(90deg);
+                        position: relative;
+                        top: unset;
+                        float: right;
 
-                label>.buttonmore {
-                    transform: rotate(90deg);
-                    position: relative;
-                    top: unset;
-                    float: right;
+                        svg {
+                            path {
+                                stroke: $accent-regular;
+                            }
 
-                    svg {
-                        path {
-                            stroke: $accent-regular;
+                            ;
                         }
 
                         ;
                     }
 
                     ;
+
                 }
 
                 ;
-
             }
 
             ;
         }
 
         ;
+
     }
 
     ;
-
-}
-
-;
 
 @media (min-width: $tabletHD) {}
 
