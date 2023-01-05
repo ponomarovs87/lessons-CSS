@@ -1835,6 +1835,7 @@ input:checked ~ .team article .intertext > a {
   }
   input:checked ~ .team article .intertext .bio {
     margin-top: 146px;
+    flex-direction: column;
   }
   input:checked ~ .team article label > .titlename {
     font-size: 38px;
