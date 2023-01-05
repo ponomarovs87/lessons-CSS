@@ -161,6 +161,7 @@ input {
     position: absolute;
     opacity: 0;
     top: 0;
+    z-index: -5;
 }
 
 ;
@@ -170,7 +171,7 @@ input {
     .team#{$i}:checked~* {
         display: none;
 
-        &>* {
+        &>article {
             display: none;
         }
 
@@ -179,11 +180,10 @@ input {
 
     .team#{$i}:checked~.team {
 
-        display: inline-block;
+        display: block;
 
         :nth-child(#{$i}) {
-            display: block;
-            margin-top: unset;
+            display: inline-flex;
 
             .intertext {
                 display: inline;
@@ -197,29 +197,43 @@ input {
 
             ;
 
-            label>.titlename {
-                font-size: 38px;
-                line-height: 46px;
-                background: $gradient-redtext;
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
 
-            ;
+        }
 
-            label>.buttonmore {
-                transform: rotate(90deg);
-                position: relative;
-                top: unset;
-                float: right;
+        ;
+    }
 
-                svg {
-                    path {
-                        stroke: $accent-regular;
-                    }
+    ;
+}
 
-                    ;
+;
+
+input:checked~.team {
+    article {
+        margin-top: unset;
+        flex-direction: column;
+
+        label>.titlename {
+            font-size: 38px;
+            line-height: 46px;
+            background: $gradient-redtext;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        ;
+
+        label>.buttonmore {
+            transform: rotate(90deg);
+            position: absolute;
+            top: unset;
+            float: right;
+
+            svg {
+
+                path {
+                    stroke: $accent-regular;
                 }
 
                 ;
@@ -238,94 +252,117 @@ input {
 
 @media (min-width: $tabletSD) {
 
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-        .team {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        article {
+            width: calc(50vw - (60px / 2) - (60px * 2 / 2));
+            display: inline-block;
 
-            article {
-                width: calc(50vw - (60px / 2) - (60px * 2 / 2));
-                display: inline-block;
+            .photo {
+                height: 400px;
+                position: relative;
+            }
 
-                .photo {
-                    height: 400px;
-                    position: relative;
-                }
+            ;
 
-                ;
-
-                label>.buttonmore {
-                    top: 415px;
-                    transform: rotate(00deg);
-                }
-
-                ;
+            label>.buttonmore {
+                top: 415px;
+                transform: rotate(00deg);
             }
 
             ;
         }
 
         ;
-
-        input:checked {
-            .team {
-                article {
-                    .intertext {
-                        display: inline;
-                    }
-
-                    ;
-
-                    .titlejob {
-                        display: inline-block;
-                    }
-
-                    ;
-
-                    label>.titlename {
-                        font-size: 38px;
-                        line-height: 46px;
-                        background: $gradient-redtext;
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-
-                    ;
-
-                    label>.buttonmore {
-                        transform: rotate(90deg);
-                        position: relative;
-                        top: unset;
-                        float: right;
-
-                        svg {
-                            path {
-                                stroke: $accent-regular;
-                            }
-
-                            ;
-                        }
-
-                        ;
-                    }
-
-                    ;
-
-                }
-
-                ;
-            }
-
-            ;
-        }
-
-        ;
-
     }
 
     ;
+
+
+    input:checked~.team {
+        $divmarLR: 60px;
+        $marleft: 330px;
+        $photowidth: 300px;
+        $photoheight: 375px;
+
+        article {
+            width: calc(100vw - (60px * 2));
+
+            label,
+            .titlejobk,
+            .intertext>a {
+                margin-left: $marleft;
+            }
+
+            ;
+
+            label>.buttonmore {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                transform: rotate(90deg);
+
+                svg {
+                    path {
+                        stroke: $accent-regular;
+                        position: relative;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
+            .photo {
+                width: $photowidth;
+                height: $photoheight;
+                position: absolute;
+            }
+
+            ;
+
+            .intertext {
+                display: inline;
+
+                .bio {
+                    margin-top: 146px;
+                }
+
+                ;
+            }
+
+            ;
+
+            label>.titlename {
+                font-size: 38px;
+                line-height: 46px;
+                background: $gradient-redtext;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: flex;
+                height: 116px + 46px;
+                align-items: flex-end;
+            }
+
+            ;
+
+        }
+
+        ;
+    }
+
+    ;
+}
+
+;
+
 
 @media (min-width: $tabletHD) {}
 
