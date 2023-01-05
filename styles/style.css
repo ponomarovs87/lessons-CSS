@@ -1811,7 +1811,7 @@ input:checked ~ .team article label > .buttonmore svg path {
     width: calc(100vw - (60px * 2));
   }
   input:checked ~ .team article label,
-input:checked ~ .team article .titlejobk,
+input:checked ~ .team article .titlejob,
 input:checked ~ .team article .intertext > a {
     margin-left: 330px;
   }
