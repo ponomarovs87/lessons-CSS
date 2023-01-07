@@ -60,8 +60,7 @@ html {
 }
 
 ;
-
-h1 {
+.contentteam>h1 {
     font-size: 30px;
     line-height: 37px;
 }
@@ -157,7 +156,7 @@ h1 {
 
 ;
 
-input {
+.contentteam>input {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -208,10 +207,16 @@ input {
 
 ;
 
-input:checked~.team {
+.contentteam>input:checked~.team {
     article {
         margin-top: unset;
         flex-direction: column;
+
+        .photo {
+            height: 375px;
+        }
+
+        ;
 
         label>.titlename {
             font-size: 38px;
@@ -251,6 +256,12 @@ input:checked~.team {
 ;
 
 @media (min-width: $tabletSD) {
+    .contentteam>h1 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    ;
 
     .team {
         display: flex;
@@ -282,7 +293,7 @@ input:checked~.team {
     ;
 
 
-    input:checked~.team {
+    .contentteam>input:checked~.team {
         $divmarLR: 60px;
         $marleft: 330px;
         $photowidth: 300px;
@@ -365,14 +376,208 @@ input:checked~.team {
 ;
 
 
-@media (min-width: $tabletHD) {}
+@media (min-width: $tabletHD) {
+    $MarLR : 60px;
+    $MartopArt : 60px;
+
+    .contentteam>h1 {
+        margin: 0 $MarLR*2;
+    }
+
+    ;
+
+    .team {
+        article {
+            margin-top: $MartopArt ;
+            width: calc((100vw / 3) - ((60px * 4)/3));
+            display: inline-block;
+        }
+
+        ;
+    }
+
+    ;
+
+    .contentteam>input:checked~.team {
+        $Marlefttext: 300px+60px;
+
+        article>*,
+        article>label,
+        article>.titlejob {
+            margin-left: $Marlefttext;
+        }
+
+        ;
+
+        article {
+
+            .photo,
+            .intertext>a {
+                margin-left: unset;
+            }
+
+            ;
+
+            label {
+                .titlename {
+                    height: unset;
+                    margin-top: unset;
+                }
+
+                ;
+            }
+
+            ;
+
+            .titlejob {
+                margin-top: 15px;
+            }
+
+            ;
+
+            .intertext>.bio {
+                margin-top: 30px;
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
+}
 
 ;
 
-@media (min-width: $desktopSD) {}
+@media (min-width: $desktopSD) {
+    body {
+        .contentteam {
+            margin: 176px 60px 0;
+        }
+
+        ;
+    }
+
+    ;
+
+    .contentteam>input:checked~.team {
+        $photowidth: 400px;
+        $photoheight: 500px;
+        $betweentextphoto: 60px;
+
+
+        article {
+            margin: 0 120px;
+            width: calc(100vw - (180px * 2));
+
+            .photo {
+                width: $photowidth;
+                height: $photoheight;
+            }
+
+            ;
+
+            .intertext {
+                .mail {
+                    position: absolute;
+                    height: max-content;
+                    top: calc(46px + 16px);
+                    margin-top: 0;
+                    right: calc(100% / 5);
+                }
+
+                ;
+
+                .LinkedIn {
+                    position: absolute;
+                    height: max-content;
+                    top: calc(46px + 16px);
+                    margin-top: 0;
+                    right: 0;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        article>*,
+        article>label,
+        article>.titlejob {
+            margin-left: $betweentextphoto+$photowidth;
+        }
+
+        ;
+
+
+    }
+
+    ;
+
+}
 
 ;
 
-@media (min-width: $desktopHD) {}
+@media (min-width: $desktopHD) {
+    body {
+        .contentteam {
+            margin: 176px 160px 0;
+        }
+
+        ;
+    }
+
+    ;
+
+    .team>article {
+        width: calc((100vw / 3) - ((60px * 2)/3) - (160px * 2)/3);
+    }
+
+    ;
+    .contentteam>input:checked~.team {
+        $photowidth: 400px;
+        $photoheight: 500px;
+        $betweentextphoto: 60px;
+
+
+        article {
+            margin: 0 120px;
+            width: calc(100vw - (280px * 2));
+
+            .intertext {
+                .mail {
+                    position: absolute;
+                    height: max-content;
+                    top: calc(46px + 16px);
+                    margin-top: 0;
+                    right: calc(100% / 5);
+                }
+
+                ;
+
+                .LinkedIn {
+                    position: absolute;
+                    height: max-content;
+                    top: calc(46px + 16px);
+                    margin-top: 0;
+                    right: 0;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+    }
+
+    ;
+}
 
 ;

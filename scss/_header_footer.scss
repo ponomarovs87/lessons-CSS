@@ -232,6 +232,12 @@
 
                     .active-page {
                         color: $accent-regular;
+
+                        &:hover {
+                            color: $accent-regular;
+                        }
+
+                        ;
                     }
 
                     ;
@@ -468,6 +474,13 @@
                         .active-page {
                             color: $accent-regular;
                             border-bottom: 2px solid;
+
+                            &:hover {
+                                color: $accent-regular;
+                                border-bottom: 2px solid;
+                            }
+
+                            ;
                         }
 
                         ;
@@ -647,8 +660,7 @@
 
 ;
 
-@media (min-width: $desktopSD) {
-}
+@media (min-width: $desktopSD) {}
 
 ;
 

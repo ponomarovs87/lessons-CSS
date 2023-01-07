@@ -1058,6 +1058,9 @@ a:hover {
 .header input:checked ~ .hamburgermenu nav ul li .active-page {
   color: #f0145a;
 }
+.header input:checked ~ .hamburgermenu nav ul li .active-page:hover {
+  color: #f0145a;
+}
 
 .footer {
   display: flex;
@@ -1175,6 +1178,10 @@ a:hover {
     color: #24a3ff;
   }
   body .header .hamburgermenu ul li .active-page {
+    color: #f0145a;
+    border-bottom: 2px solid;
+  }
+  body .header .hamburgermenu ul li .active-page:hover {
     color: #f0145a;
     border-bottom: 2px solid;
   }
@@ -1591,7 +1598,7 @@ html {
   display: contents;
 }
 
-h1 {
+.contentteam > h1 {
   font-size: 30px;
   line-height: 37px;
 }
@@ -1639,7 +1646,7 @@ h1 {
   margin-bottom: 60px;
 }
 
-input {
+.contentteam > input {
   position: absolute;
   opacity: 0;
   top: 0;
@@ -1766,11 +1773,14 @@ input {
   display: inline-block;
 }
 
-input:checked ~ .team article {
+.contentteam > input:checked ~ .team article {
   margin-top: unset;
   flex-direction: column;
 }
-input:checked ~ .team article label > .titlename {
+.contentteam > input:checked ~ .team article .photo {
+  height: 375px;
+}
+.contentteam > input:checked ~ .team article label > .titlename {
   font-size: 38px;
   line-height: 46px;
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -1778,17 +1788,22 @@ input:checked ~ .team article label > .titlename {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-input:checked ~ .team article label > .buttonmore {
+.contentteam > input:checked ~ .team article label > .buttonmore {
   transform: rotate(90deg);
   position: absolute;
   top: unset;
   float: right;
 }
-input:checked ~ .team article label > .buttonmore svg path {
+.contentteam > input:checked ~ .team article label > .buttonmore svg path {
   stroke: #f0145a;
 }
 
 @media (min-width: 768px) {
+  .contentteam > h1 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
   .team {
     display: flex;
     flex-wrap: wrap;
@@ -1807,37 +1822,37 @@ input:checked ~ .team article label > .buttonmore svg path {
     transform: rotate(0deg);
   }
 
-  input:checked ~ .team article {
+  .contentteam > input:checked ~ .team article {
     width: calc(100vw - (60px * 2));
   }
-  input:checked ~ .team article label,
-input:checked ~ .team article .titlejob,
-input:checked ~ .team article .intertext > a {
+  .contentteam > input:checked ~ .team article label,
+.contentteam > input:checked ~ .team article .titlejob,
+.contentteam > input:checked ~ .team article .intertext > a {
     margin-left: 330px;
   }
-  input:checked ~ .team article label > .buttonmore {
+  .contentteam > input:checked ~ .team article label > .buttonmore {
     position: absolute;
     top: 0px;
     right: 0px;
     transform: rotate(90deg);
   }
-  input:checked ~ .team article label > .buttonmore svg path {
+  .contentteam > input:checked ~ .team article label > .buttonmore svg path {
     stroke: #f0145a;
     position: relative;
   }
-  input:checked ~ .team article .photo {
+  .contentteam > input:checked ~ .team article .photo {
     width: 300px;
     height: 375px;
     position: absolute;
   }
-  input:checked ~ .team article .intertext {
+  .contentteam > input:checked ~ .team article .intertext {
     display: inline;
   }
-  input:checked ~ .team article .intertext .bio {
+  .contentteam > input:checked ~ .team article .intertext .bio {
     margin-top: 146px;
     flex-direction: column;
   }
-  input:checked ~ .team article label > .titlename {
+  .contentteam > input:checked ~ .team article label > .titlename {
     font-size: 38px;
     line-height: 46px;
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -1847,5 +1862,97 @@ input:checked ~ .team article .intertext > a {
     display: flex;
     height: 162px;
     align-items: flex-end;
+  }
+}
+@media (min-width: 1024px) {
+  .contentteam > h1 {
+    margin: 0 120px;
+  }
+
+  .team article {
+    margin-top: 60px;
+    width: calc((100vw / 3) - ((60px * 4)/3));
+    display: inline-block;
+  }
+
+  .contentteam > input:checked ~ .team article > *,
+.contentteam > input:checked ~ .team article > label,
+.contentteam > input:checked ~ .team article > .titlejob {
+    margin-left: 360px;
+  }
+  .contentteam > input:checked ~ .team article .photo,
+.contentteam > input:checked ~ .team article .intertext > a {
+    margin-left: unset;
+  }
+  .contentteam > input:checked ~ .team article label .titlename {
+    height: unset;
+    margin-top: unset;
+  }
+  .contentteam > input:checked ~ .team article .titlejob {
+    margin-top: 15px;
+  }
+  .contentteam > input:checked ~ .team article .intertext > .bio {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  body .contentteam {
+    margin: 176px 60px 0;
+  }
+
+  .contentteam > input:checked ~ .team article {
+    margin: 0 120px;
+    width: calc(100vw - (180px * 2));
+  }
+  .contentteam > input:checked ~ .team article .photo {
+    width: 400px;
+    height: 500px;
+  }
+  .contentteam > input:checked ~ .team article .intertext .mail {
+    position: absolute;
+    height: max-content;
+    top: calc(46px + 16px);
+    margin-top: 0;
+    right: calc(100% / 5);
+  }
+  .contentteam > input:checked ~ .team article .intertext .LinkedIn {
+    position: absolute;
+    height: max-content;
+    top: calc(46px + 16px);
+    margin-top: 0;
+    right: 0;
+  }
+  .contentteam > input:checked ~ .team article > *,
+.contentteam > input:checked ~ .team article > label,
+.contentteam > input:checked ~ .team article > .titlejob {
+    margin-left: 460px;
+  }
+}
+@media (min-width: 1920px) {
+  body .contentteam {
+    margin: 176px 160px 0;
+  }
+
+  .team > article {
+    width: calc((100vw / 3) - ((60px * 2)/3) - (160px * 2)/3);
+  }
+
+  .contentteam > input:checked ~ .team article {
+    margin: 0 120px;
+    width: calc(100vw - (280px * 2));
+  }
+  .contentteam > input:checked ~ .team article .intertext .mail {
+    position: absolute;
+    height: max-content;
+    top: calc(46px + 16px);
+    margin-top: 0;
+    right: calc(100% / 5);
+  }
+  .contentteam > input:checked ~ .team article .intertext .LinkedIn {
+    position: absolute;
+    height: max-content;
+    top: calc(46px + 16px);
+    margin-top: 0;
+    right: 0;
   }
 }
