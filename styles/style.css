@@ -1290,6 +1290,47 @@ a:hover {
     right: 160px;
   }
 }
+.darktheme .header {
+  background: #323264;
+}
+.darktheme .header .boxgrey {
+  opacity: 0.2;
+}
+.darktheme .header .language-nav ul li a {
+  color: #ffffff;
+}
+.darktheme .header .contact-information li a {
+  color: #ffffff;
+}
+.darktheme .header .contact-information li img {
+  background: white;
+  border-radius: 50%;
+}
+.darktheme .header .log-slash-namepage-inter4px .log-6933x32bgnone-AcRe-MaRe-media130x60 svg > path {
+  fill: #ffffff;
+}
+.darktheme .header .log-slash-namepage-inter4px .log-6933x32bgnone-AcRe-MaRe-media130x60 svg :first-child {
+  fill: #f0145a;
+}
+.darktheme .header .log-slash-namepage-inter4px .NamePage-height44-fs36-lh44-MaRe {
+  color: #ffffff;
+}
+.darktheme .header .svg-32x32bgnone-32x32-MaRe-active svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+@media (min-width: 768px) {
+  .darktheme .header .hamburgermenu ul li a {
+    color: #ffffff;
+  }
+  .darktheme .header .hamburgermenu ul li a:hover {
+    color: #ffffff;
+  }
+}
+.darktheme .header .hamburgermenu ul li a.active-page {
+  color: #f0145a;
+}
+
 .content {
   position: relative;
   margin: 132px 30px 0;

@@ -744,3 +744,113 @@
 }
 
 ;
+
+.darktheme {
+    .header {
+        background: $main-regular;
+
+        .boxgrey {
+            opacity: 0.2;
+        }
+
+        ;
+
+        .language-nav {
+            ul {
+                li {
+                    a {
+                        color: $basic-color-white;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        .contact-information {
+            li {
+                a {
+                    color: $basic-color-white;
+                }
+
+                ;
+
+                img {
+                    background: white;
+                    border-radius: 50%;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        .log-slash-namepage-inter4px {
+            .log-6933x32bgnone-AcRe-MaRe-media130x60 {
+                svg>path {
+                    fill: $basic-color-white;
+                }
+
+                ;
+
+                svg :first-child {
+                    fill: $accent-regular;
+                }
+
+                ;
+            }
+
+            ;
+
+            .NamePage-height44-fs36-lh44-MaRe {
+                color: $basic-color-white;
+            }
+
+            ;
+
+        }
+
+        ;
+
+        .svg-32x32bgnone-32x32-MaRe-active svg path {
+            fill: $basic-color-white;
+            stroke: $basic-color-white;
+        }
+
+        ;
+
+        .hamburgermenu ul li a {
+            @media (min-width: $tabletSD) {
+                color: $basic-color-white;
+                &:hover{
+                    color: $basic-color-white;
+                };
+            }
+
+            ;
+
+            &.active-page {
+                color: #f0145a;
+            }
+
+            ;
+
+        }
+
+        ;
+
+    }
+
+    ;
+}
+
+;
