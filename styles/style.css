@@ -1996,3 +1996,457 @@ a:hover {
 html {
   overflow-x: hidden;
 }
+
+.contenthomepage {
+  margin-top: 102px;
+}
+.contenthomepage .darkpart {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+  box-shadow: 0px 22px 18px -13px rgba(0, 0, 0, 0.75);
+}
+.contenthomepage .darkpart .symbol {
+  background: no-repeat center/cover url(../images/Homepage/Symbol.svg);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.contenthomepage .darkpart .symbol h1 {
+  position: absolute;
+  width: 315px;
+  height: 138px;
+  text-align: center;
+  color: #ffffff;
+  background: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+}
+.contenthomepage .darkpart .symbol label div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: calc(50% - 42px/2);
+  bottom: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.contenthomepage .darkpart .symbol label div svg {
+  width: 9px;
+}
+.contenthomepage .darkpart .symbol label div svg path {
+  stroke: #ffffff;
+}
+.contenthomepage .darkpart .symbol ~ * {
+  margin: 0 30px;
+}
+.contenthomepage .darkpart .frame {
+  width: calc(100vw - (30px * 2));
+  display: flex;
+  overflow-x: auto;
+  height: fit-content;
+  border-bottom: solid 4px rgba(255, 255, 255, 0.3);
+}
+.contenthomepage .darkpart .frame .hero {
+  margin: 30px 15px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+}
+.contenthomepage .darkpart .frame :first-child {
+  margin-left: 0;
+}
+.contenthomepage .darkpart .frame :first-child ~ .hero {
+  color: #B3B3BA;
+  -webkit-text-fill-color: unset;
+}
+.contenthomepage .darkpart .frame :last-child {
+  margin-right: 0;
+}
+.contenthomepage .darkpart .about h2,
+.contenthomepage .darkpart .about p {
+  margin-top: 30px;
+  color: #ffffff;
+}
+.contenthomepage .darkpart .about h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.contenthomepage .darkpart .about p {
+  font-size: 19px;
+  line-height: 30px;
+}
+.contenthomepage .darkpart .services {
+  margin-top: 30px;
+}
+.contenthomepage .darkpart .services :last-child {
+  margin-bottom: 60px;
+}
+.contenthomepage .darkpart .services .titlehref {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.contenthomepage .darkpart .services p.hero {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 10px;
+}
+.contenthomepage .darkpart .services article {
+  margin-top: 30px;
+}
+.contenthomepage .darkpart .services article .icon0 {
+  background: no-repeat center/cover url(../images/Homepage/servisesicon/Icon-0.svg);
+}
+.contenthomepage .darkpart .services article .icon1 {
+  background: no-repeat center/cover url(../images/Homepage/servisesicon/Icon-1.svg);
+}
+.contenthomepage .darkpart .services article .icon2 {
+  background: no-repeat center/cover url(../images/Homepage/servisesicon/Icon-2.svg);
+}
+.contenthomepage .darkpart .services article .icon3 {
+  background: no-repeat center/cover url(../images/Homepage/servisesicon/Icon-3.svg);
+}
+.contenthomepage .darkpart .services article .icon4 {
+  background: no-repeat center/cover url(../images/Homepage/servisesicon/Icon-4.svg);
+}
+.contenthomepage .darkpart .services article .icon5 {
+  background: no-repeat center/cover url(../images/Homepage/servisesicon/Icon-5.svg);
+}
+.contenthomepage .darkpart .services article .img {
+  width: 96px;
+  height: 96px;
+}
+.contenthomepage .darkpart .services article h3 {
+  margin-top: 30px;
+  color: #24a3ff;
+}
+.contenthomepage .darkpart .services article p {
+  margin-top: 15px;
+  color: #ffffff;
+}
+.contenthomepage .darkpart ~ * {
+  margin: 0 30px;
+}
+.contenthomepage .team {
+  margin-top: 50px;
+}
+.contenthomepage .team input {
+  display: none;
+}
+.contenthomepage .team article {
+  margin-top: unset;
+  background-color: #f5f5fa;
+  border-radius: 12px;
+}
+.contenthomepage .team article .img {
+  background: no-repeat center/cover url(../images/photo/Team_photos/Team-1.png);
+  width: calc(100vw - 60px);
+  height: 500px;
+  border-radius: 12px 12px 0px 0px;
+  margin-top: 0;
+}
+.contenthomepage .team article div {
+  margin-top: 30px;
+}
+.contenthomepage .team article div * {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.contenthomepage .team article div a h3 {
+  color: #24a3ff;
+}
+.contenthomepage .team article div p.hero {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 5px;
+  word-break: break-word;
+}
+.contenthomepage .team article div h4 {
+  margin-top: 30px;
+  color: #B3B3BA;
+}
+.contenthomepage .team article div p {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+  margin-bottom: 30px;
+}
+.contenthomepage .team .Paginator {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.contenthomepage .team .Paginator ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.contenthomepage .team .Paginator ul li:hover label svg circle {
+  opacity: 0.6;
+}
+.contenthomepage .team #acrticle__tab1:checked ~ .Paginator .circle__tab1 > svg > circle {
+  opacity: 1;
+}
+.contenthomepage .team #acrticle__tab2:checked ~ .Paginator .circle__tab2 > svg > circle {
+  opacity: 1;
+}
+.contenthomepage .team #acrticle__tab3:checked ~ .Paginator .circle__tab3 > svg > circle {
+  opacity: 1;
+}
+.contenthomepage .clients {
+  margin: 60px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenthomepage .clients .articles {
+  margin-top: 30px;
+}
+.contenthomepage .clients .articles article {
+  background: blue;
+  height: 120px;
+  width: 100vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.contenthomepage .clients .articles .Hillel {
+  display: inline-flex;
+  background-color: #1C4280;
+}
+.contenthomepage .clients .articles .WannaBiz {
+  display: inline-flex;
+  background-color: #143646;
+}
+.contenthomepage .clients .articles .TapGerine {
+  display: inline-flex;
+  background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+.contenthomepage .clients .articles .dLook {
+  display: inline-flex;
+  background: #9E4DC3;
+}
+.contenthomepage .clients .articles .Orangear {
+  display: inline-flex;
+  background: #FD9339;
+}
+.contenthomepage .clients .articles .Adtellige {
+  display: inline-flex;
+  background: #E2E2E4;
+}
+.contenthomepage .publications {
+  background-color: #f5f5fa;
+  margin: 0;
+}
+.contenthomepage .publications .articles {
+  margin: unset;
+}
+.contenthomepage .publications :last-child {
+  margin-bottom: 30px;
+}
+.contenthomepage .publications * {
+  margin: 0 30px 0;
+}
+.contenthomepage .publications h3.caps {
+  margin-top: 30px;
+  color: #24a3ff;
+}
+.contenthomepage .publications p.hero {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+}
+.contenthomepage .publications article {
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.contenthomepage .publications article * {
+  margin: 0;
+}
+.contenthomepage .publications article .img {
+  border-radius: 8px 8px 0px 0px;
+  width: calc(100vw - 60px);
+  height: 200px;
+}
+.contenthomepage .publications article .text {
+  margin: 0 30px;
+}
+.contenthomepage .publications article .text .title {
+  margin-top: 30px;
+  color: #24a3ff;
+}
+.contenthomepage .publications article .text .date {
+  margin: 15px 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+}
+.contenthomepage .publications article .text .inputtext {
+  border-top: solid 4px #e6e6f0;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+.contenthomepage .publications .cover0 .img {
+  background: no-repeat center/cover url(../images/Homepage/publications/Cover-0.png);
+}
+.contenthomepage .publications .cover1 .img {
+  background: no-repeat center/cover url(../images/Homepage/publications/Cover-1.png);
+}
+.contenthomepage .publications .cover2 .img {
+  background: no-repeat center/cover url(../images/Homepage/publications/Cover-2.png);
+}
+
+@media (min-width: 768px) {
+  .contenthomepage {
+    margin-top: 219px;
+  }
+  .contenthomepage .darkpart .symbol {
+    height: 804px;
+  }
+  .contenthomepage .darkpart .symbol h1 {
+    width: 100%;
+    height: fit-content;
+  }
+  .contenthomepage .darkpart .symbol ~ * {
+    margin: 0 60px;
+  }
+  .contenthomepage .darkpart .frame {
+    width: calc(100vw - (60px * 2));
+  }
+  .contenthomepage .darkpart .frame .hero {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .contenthomepage .darkpart .about h2 {
+    margin-top: 60px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .contenthomepage .darkpart .services {
+    margin-top: 60px;
+  }
+  .contenthomepage .darkpart .services p.hero {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .contenthomepage .darkpart .services .articlesservices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .contenthomepage .darkpart .services .articlesservices article {
+    width: 294px;
+    margin-top: 0;
+  }
+  .contenthomepage .darkpart .services .articlesservices article p {
+    height: fit-content;
+  }
+  .contenthomepage .team {
+    margin: 80px 60px 0;
+  }
+  .contenthomepage .team .teamarticle {
+    width: fit-content;
+  }
+  .contenthomepage .team .teamarticle .img {
+    width: calc(100vw - (60px * 2));
+  }
+  .contenthomepage .team .teamarticle a {
+    margin: 0;
+  }
+  .contenthomepage .team .teamarticle p.hero {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .contenthomepage .team .Paginator {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .contenthomepage .clients .articles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenthomepage .clients .articles * {
+    margin: 0;
+    padding: 0;
+  }
+  .contenthomepage .clients .articles article {
+    width: calc(100vw / 3);
+    display: inline-flex;
+  }
+  .contenthomepage .clients .articles .Clickky {
+    background: #C71C36;
+  }
+  .contenthomepage .clients .articles .Ecolease {
+    background: #DCF3F9;
+  }
+  .contenthomepage .clients .articles .InfaTek {
+    background: #EAEAEA;
+  }
+  .contenthomepage .clients .articles .SityPark {
+    background: #282240;
+  }
+  .contenthomepage .clients .articles .ArtPrintStudio {
+    background: #1D4568;
+  }
+  .contenthomepage .clients .articles .UltimateCard {
+    background: #000000;
+  }
+  .contenthomepage .publications {
+    width: 100vw;
+  }
+  .contenthomepage .publications * {
+    margin: 0 60px 0;
+  }
+  .contenthomepage .publications a {
+    margin: 0;
+  }
+  .contenthomepage .publications a h3.caps {
+    margin-bottom: 0;
+  }
+  .contenthomepage .publications p.hero {
+    margin-top: 10px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .contenthomepage .publications .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 60px 0;
+  }
+  .contenthomepage .publications .articles article {
+    width: 309px;
+    margin: 30px 0 0;
+  }
+  .contenthomepage .publications .articles article .img {
+    width: 100%;
+  }
+  .contenthomepage .publications .articles article .inputtext, .contenthomepage .publications .articles article .title {
+    width: calc(100% - 60px);
+  }
+  .contenthomepage .publications .articles :last-child {
+    width: 100%;
+  }
+}
