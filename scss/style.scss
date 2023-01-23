@@ -434,9 +434,12 @@ html {
     .publications {
         background-color: $grey-bg;
         margin: 0;
-        .articles{
+
+        .articles {
             margin: unset;
-        };
+        }
+
+        ;
 
         :last-child {
             margin-bottom: 30px;
@@ -732,6 +735,7 @@ html {
 
         .publications {
             width: 100vw;
+
             * {
                 margin: 0 60px 0;
             }
@@ -773,15 +777,22 @@ html {
                     }
 
                     ;
-                    .inputtext,.title{
+
+                    .inputtext,
+                    .title {
                         width: calc(100% - 60px);
-                    };
+                    }
+
+                    ;
                 }
 
                 ;
-                :last-child{
+
+                :last-child {
                     width: 100%;
-                };
+                }
+
+                ;
             }
 
             ;
@@ -795,7 +806,117 @@ html {
 
 ;
 
-@media (min-width: $tabletHD) {}
+@media (min-width: $tabletHD) {
+    .contenthomepage {
+        margin-top: 115px;
+
+        .darkpart {
+            .symbol {
+                background-size: 669.96px;
+            }
+
+            ;
+
+            .frame {
+                display: inline-flex;
+                flex-direction: column;
+                width: calc(375% / (1024 / 100));
+                align-items: flex-end;
+                border-right: solid 4px rgba(255, 255, 255, 0.3);
+                padding-right: 60px;
+                margin-right: unset;
+                border-bottom: unset;
+
+                p.hero {
+                    margin: 15px 0 15px;
+                }
+
+                ;
+            }
+
+            ;
+
+            .about {
+                display: inline-flex;
+                width: calc(405% / (1024 / 100));
+                flex-direction: column;
+                margin-left: 56px;
+            }
+
+            ;
+
+            .services {
+                .articlesservices {
+                    margin-top: 60px;
+
+                    article {
+                        width: calc((100% / 3) - (120px / 3));
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        .team {
+            .teamarticle {
+                position: relative;
+
+                .img {
+                    width: 400px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                ;
+
+                .teamtext {
+                    margin-left: 400px;
+
+                    p.hero {
+                        margin-bottom: unset;
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+            .Paginator{
+                margin-top:30px;
+            };
+
+
+        }
+
+        ;
+        .clients{
+            .articles{
+                article{
+                    width: 25%;
+                };
+            };
+        };
+        .publications{
+            .articles{
+                padding-bottom: 30px;
+                article.cover{
+                    width: calc(33% - (60px / 3));
+                };
+            };
+        };
+    }
+}
 
 ;
 

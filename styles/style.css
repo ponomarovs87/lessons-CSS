@@ -2443,10 +2443,72 @@ html {
   .contenthomepage .publications .articles article .img {
     width: 100%;
   }
-  .contenthomepage .publications .articles article .inputtext, .contenthomepage .publications .articles article .title {
+  .contenthomepage .publications .articles article .inputtext,
+.contenthomepage .publications .articles article .title {
     width: calc(100% - 60px);
   }
   .contenthomepage .publications .articles :last-child {
     width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .contenthomepage {
+    margin-top: 115px;
+  }
+  .contenthomepage .darkpart .symbol {
+    background-size: 669.96px;
+  }
+  .contenthomepage .darkpart .frame {
+    display: inline-flex;
+    flex-direction: column;
+    width: calc(375% / (1024 / 100));
+    align-items: flex-end;
+    border-right: solid 4px rgba(255, 255, 255, 0.3);
+    padding-right: 60px;
+    margin-right: unset;
+    border-bottom: unset;
+  }
+  .contenthomepage .darkpart .frame p.hero {
+    margin: 15px 0 15px;
+  }
+  .contenthomepage .darkpart .about {
+    display: inline-flex;
+    width: calc(405% / (1024 / 100));
+    flex-direction: column;
+    margin-left: 56px;
+  }
+  .contenthomepage .darkpart .services .articlesservices {
+    margin-top: 60px;
+  }
+  .contenthomepage .darkpart .services .articlesservices article {
+    width: calc((100% / 3) - (120px / 3));
+  }
+  .contenthomepage .team .teamarticle {
+    position: relative;
+  }
+  .contenthomepage .team .teamarticle .img {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .contenthomepage .team .teamarticle .teamtext {
+    margin-left: 400px;
+  }
+  .contenthomepage .team .teamarticle .teamtext p.hero {
+    margin-bottom: unset;
+  }
+  .contenthomepage .team .Paginator {
+    margin-top: 30px;
+  }
+  .contenthomepage .clients .articles article {
+    width: 25%;
+  }
+  .contenthomepage .publications .articles {
+    padding-bottom: 30px;
+  }
+  .contenthomepage .publications .articles article.cover {
+    width: calc(33% - (60px / 3));
   }
 }
