@@ -13,6 +13,22 @@ html {
     $margintop15: 15px;
     margin-top: 102px;
 
+    .hoverHomepage.addforhightpriority {
+        &:hover {
+            color: $accent-regular;
+
+            * {
+                color: $accent-regular;
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
+
     .darkpart {
         background: $gradient-supersoft;
         border-radius: 0px 0px 12px 12px;
@@ -1027,9 +1043,12 @@ html {
             }
 
             ;
-            .articles{
+
+            .articles {
                 margin: 0 160px 0;
-            };
+            }
+
+            ;
         }
 
         ;

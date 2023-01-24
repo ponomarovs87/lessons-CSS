@@ -2000,6 +2000,12 @@ html {
 .contenthomepage {
   margin-top: 102px;
 }
+.contenthomepage .hoverHomepage.addforhightpriority:hover {
+  color: #f0145a;
+}
+.contenthomepage .hoverHomepage.addforhightpriority:hover * {
+  color: #f0145a;
+}
 .contenthomepage .darkpart {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   border-radius: 0px 0px 12px 12px;
