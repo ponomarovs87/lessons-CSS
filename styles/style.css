@@ -2509,6 +2509,51 @@ html {
     padding-bottom: 30px;
   }
   .contenthomepage .publications .articles article.cover {
-    width: calc(33% - (60px / 3));
+    width: calc((100% / 3) - (60px / 3));
+  }
+}
+@media (min-width: 1440px) {
+  .contenthomepage .darkpart .symbol {
+    height: 799px;
+    background-size: contain;
+  }
+  .contenthomepage .darkpart .frame {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1920px) {
+  .contenthomepage .darkpart .symbol {
+    height: 1000px;
+  }
+  .contenthomepage .darkpart .frame {
+    margin: 60px 0 0 280px;
+    width: calc(375% / (1920 / 100));
+  }
+  .contenthomepage .darkpart .about {
+    margin: 60px 280px 0 54px;
+    width: calc(861% / (1920 / 100));
+    height: 304px;
+    position: absolute;
+  }
+  .contenthomepage .darkpart .about h3 {
+    margin-top: 73px;
+  }
+  .contenthomepage .darkpart .services {
+    margin: 60px 180px 0;
+  }
+  .contenthomepage .team {
+    margin: 80px 160px 0;
+  }
+  .contenthomepage .clients .articles {
+    margin: 30px 100px 0;
+  }
+  .contenthomepage .publications {
+    margin-top: 60px;
+  }
+  .contenthomepage .publications * {
+    margin: 0 160px 0;
+  }
+  .contenthomepage .publications .articles {
+    margin: 0 160px 0;
   }
 }
