@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Graphik LC TT';
+    font-style: normal;
+    src: url(../fonts/GraphikLCG-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Graphik LC TT bold';
+    font-style: bold;
+    src: url(../fonts/GraphikLCG-Semibold.ttf) format('truetype');
+}

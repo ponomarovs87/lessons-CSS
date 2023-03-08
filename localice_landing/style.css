@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Graphik L, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+.container .header {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 0;
+  border-bottom: 1px solid #CCCCCC;
+  height: 95px;
+}
+.container .header .wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.container .header .wrapper .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 51px;
+}
+.container .header .wrapper .content .logo {
+  margin-right: 51px;
+}
+.container .header .wrapper .content .logo:hover {
+  cursor: pointer;
+}
+.container .header .wrapper .content .navigation ul {
+  display: flex;
+  flex-direction: row;
+}
+.container .header .wrapper .content .navigation ul li {
+  list-style: none;
+  margin-right: 57px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+.container .header .wrapper .content .navigation ul li:last-of-type {
+  margin-right: 0;
+}
+.container .header .wrapper .content .navigation ul li:hover {
+  cursor: pointer;
+}
+.container .header .wrapper .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 51px;
+}
+.container .header .wrapper .buttons button {
+  height: 45px;
+  width: 120px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+}
+.container .header .wrapper .buttons button:hover {
+  cursor: pointer;
+}
+.container .header .wrapper .buttons .transparent {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  margin-right: 10px;
+}
+.container .header .wrapper .buttons .filled {
+  background: #FF6336;
+  border-radius: 0;
+  border: none;
+  color: #FFFFFF;
+}
+.container .main {
+  min-height: calc(100vh - 95px - 455px);
+  height: 100%;
+}
+.container .main .wrapper {
+  margin: 97px auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .wrapper .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75px;
+}
+.container .main .wrapper .content h1 {
+  max-width: 552px;
+  width: 100%;
+  margin-bottom: 51px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+  color: #000000;
+}
+.container .main .wrapper .content p {
+  max-width: 471px;
+  width: 100%;
+  margin-bottom: 51px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #000000;
+}
+.container .main .wrapper .content .buttons {
+  margin-bottom: 25px;
+}
+.container .main .wrapper .content .buttons button {
+  width: 160px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  text-align: center;
+}
+.container .main .wrapper .content .buttons .transparent {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+}
+.container .main .wrapper .content .buttons .filled {
+  background: #FF6336;
+  border-radius: 0;
+  border: none;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+.container .main .wrapper .content .annotation {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+.container .footer {
+  background: #FF9C7D;
+  height: 455px;
+}
+.container .footer .wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 108px;
+  display: flex;
+  flex-direction: column;
+}
+.container .footer .wrapper h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .footer .wrapper .icons {
+  margin-top: 70px;
+  margin-left: 102px;
+  margin-right: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

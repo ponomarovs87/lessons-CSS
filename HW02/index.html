@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 2</title>
+    <style type="text/css">
+        td.ColColor {
+            background-color: rgba(41, 41, 231, 0.779);
+        }
+
+        td.ColColor2 {
+            background-color: rgb(229, 229, 4);
+        }
+
+        TH,
+        TD {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 7px;
+        }
+
+        TABLE {
+            width: 500px;
+            height: 200px;
+            margin: auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+            text-align: center;
+            border-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="ColColor">MY FIRST TABLE</td>
+                </tr>
+                <tr>
+                    <td class="ColColor">First cell</td>
+                    <td class="ColColor">Second cell</td>
+                    <td colspan="2" rowspan="3" class="ColColor2">6 cells merged together</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="ColColor2">2 cells merged into one</td>
+                </tr>
+                <tr>
+                    <td class="ColColor2">1st cell <br> 3rd row</td>
+                    <td class="ColColor2">2st cell <br> 3rd row</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="ColColor2">Do you like tables?</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer>
+
+</footer>
+
+</html>
