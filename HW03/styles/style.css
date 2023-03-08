@@ -1,0 +1,7 @@
+.FontWeightBold{font-weight:bold;font-style:normal;margin-bottom: 0px}
+li{font-weight:normal;font-style:italic;margin-bottom: 1%}
+*{text-align: center}
+ul>li{text-align:left}
+dt{font-weight:bold}
+dd{font-style:italic}
+a{display: flow-root;font-size: 150%;margin:2%}

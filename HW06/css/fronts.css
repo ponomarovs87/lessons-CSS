@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fronts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Roboto bold';
+    src: url(../fronts/Roboto/Roboto-Bold.ttf) format('truetype');
+}

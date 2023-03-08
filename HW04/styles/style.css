@@ -1,0 +1,35 @@
+h1 {
+    color: violet;
+    font-weight: bold;
+    font-size: 50px
+}
+
+#Red {
+    color: red
+}
+
+p>span {
+    color: pink
+}
+
+.class.classgreentext {
+    color: green
+}
+
+* {
+    text-align: center;
+    color: black
+}
+
+.coloryellow {
+    color: yellow
+}
+
+.colorblue {
+    color: blue
+}
+
+p+p {
+    text-align: right;
+    color: lawngreen
+}
